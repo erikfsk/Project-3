@@ -3,6 +3,10 @@
 #define _USE_MATH_DEFINES
 #include <cmath>
 #include <vector>
+#include <iostream>
+#include <cstdio>
+#include <armadillo>
+#include <fstream>
 using std::vector;
 
 
@@ -10,6 +14,7 @@ class planet
 {
 public:
     // Properties
+    ofstream outFile;
     double mass;
     double position[3];
     double velocity[3];
@@ -30,8 +35,7 @@ public:
     double distance(planet otherPlanet);
     double GravitationalForce(planet otherPlanet, double Gconst);
     double Acceleration(planet otherPlanet, double Gconst);
-    void eulers_step(planet otherPlanet);
-    void verlet_step(planet otherPlanet);
+    void verlet_step(planet otherPlanet,double t_step);
     double KineticEnergy();
     double PotentialEnergy(planet &otherPlanet, double Gconst, double epsilon);
 

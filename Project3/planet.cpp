@@ -73,74 +73,21 @@ double planet::Acceleration(planet otherPlanet, double Gconst)
 }
 
 
-void planet::eulers_step(planet otherPlanet){
-    ofstream outFile;
-    outFile.open("object_ori_euler.txt", std::ios::out);
-    if (! outFile.is_open()) {
-        cout << "Problem opening file." << endl;
-        exit(1);
-    }
-    outFile << "x y" << endl;
-    double t_start = 0; double t_end = 5; int n = 100000;
-    double h = (t_end-t_start)/(n-1);
+void planet::verlet_step(planet otherPlanet,double t_step){
+    double a = -1*Acceleration(otherPlanet,1);
+    double old_x = this->position[0]; double old_y = this->position[1];
 
-    int counter = 0;
-    for(int i = 1; i < n; i++){
-        /*if(counter == 9){
-            counter = 0;
-            outFile << position[0] << " " << position[1] << " " << position[2] << endl;
-        } else {
-            counter++;
-        }*/
-        outFile << position[0] << " " << position[1] << endl;
-        double a = -1*Acceleration(otherPlanet,1);
-        cout << a << endl;
-        double old_x = this->position[0]; double old_y = this->position[1];
-        this->position[0] = old_x + h*this->velocity[0];
-        this->position[1] = old_y + h*this->velocity[1];
-        this->velocity[0] = this->velocity[0] + (h*a*(old_x));
-        this->velocity[1] = this->velocity[1] + (h*a*(old_y));
-        
-    }
-}
+    //y[i] = y[i-1] + h*Vy[i-1] + (0.5*h*h*a*(y[i-1]));
+    //x[i] = x[i-1] + h*Vx[i-1] + (0.5*h*h*a*(x[i-1]));
 
-void planet::verlet_step(planet otherPlanet){
-    ofstream outFile;
-    outFile.open("object_ori_verlet.txt", std::ios::out);
-    if (! outFile.is_open()) {
-        cout << "Problem opening file." << endl;
-        exit(1);
-    }
-    outFile << "x y" << endl;
-    double t_start = 0; double t_end = 5; int n = 100000;
-    double h = (t_end-t_start)/(n-1);
+    this->position[0] = old_x + t_step*this->velocity[0] + (0.5*t_step*t_step*a*(old_x));
+    this->position[1] = old_y + t_step*this->velocity[1] + (0.5*t_step*t_step*a*(old_y));
 
-    int counter = 0;
-    for(int i = 1; i < n; i++){
-        /*if(counter == 9){
-            counter = 0;
-            outFile << position[0] << " " << position[1] << " " << position[2] << endl;
-        } else {
-            counter++;
-        }*/
-        outFile << position[0] << " " << position[1] << endl;
-        double a = -1*Acceleration(otherPlanet,1);
-        cout << a << endl;
-        double old_x = this->position[0]; double old_y = this->position[1];
+    //Vy[i] = Vy[i-1] + 0.5*h*(a*(y[i-1] + y[i]));
+    //Vx[i] = Vx[i-1] + 0.5*h*(a*(x[i-1] + x[i]));
 
-        //y[i] = y[i-1] + h*Vy[i-1] + (0.5*h*h*a*(y[i-1]));
-        //x[i] = x[i-1] + h*Vx[i-1] + (0.5*h*h*a*(x[i-1]));
-
-        this->position[0] = old_x + h*this->velocity[0] + (0.5*h*h*a*(old_x));
-        this->position[1] = old_y + h*this->velocity[1] + (0.5*h*h*a*(old_y));
-
-        //Vy[i] = Vy[i-1] + 0.5*h*(a*(y[i-1] + y[i]));
-        //Vx[i] = Vx[i-1] + 0.5*h*(a*(x[i-1] + x[i]));
-
-        this->velocity[0] = this->velocity[0] + (0.5*h*a*(old_x+this->position[0]));
-        this->velocity[1] = this->velocity[1] + (0.5*h*a*(old_y+this->position[1]));
-        
-    }
+    this->velocity[0] = this->velocity[0] + (0.5*t_step*a*(old_x+this->position[0]));
+    this->velocity[1] = this->velocity[1] + (0.5*t_step*a*(old_y+this->position[1]));
 }
 
 
