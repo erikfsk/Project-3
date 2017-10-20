@@ -26,5 +26,5 @@ for txtfile in txtfiles:
 	#plot(data["t"],data["x"],label="x")
 
 plot(0,0,"ro",label="Sun")
-legend(loc="best")
+#legend(loc="best")
 show()
