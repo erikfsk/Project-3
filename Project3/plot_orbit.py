@@ -24,7 +24,5 @@ for txtfile in txtfiles:
 	print data.keys()
 	plot(data["x"],data["y"],label=txtfile[:-4])
 	#plot(data["t"],data["x"],label="x")
-
-plot(0,0,"ro",label="Sun")
 legend(loc="best")
 show()
