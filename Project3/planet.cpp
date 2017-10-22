@@ -107,7 +107,7 @@ bool planet::clear_file(){
         cout << "Problem opening file." << endl;
         exit(1);
     }
-    outFile << "x y" << endl;
+    outFile << "x y z" << endl;
     outFile.close();
     return true;
 }
@@ -119,7 +119,7 @@ bool planet::write_to_file(){
         cout << "Problem opening file." << endl;
         exit(1);
     }
-    outFile << this->position[0] << " " << this->position[1] << endl;
+    outFile << this->position[0] << " " << this->position[1] << " " << this->position[2] << endl;
     outFile.close();
     return true;
 }

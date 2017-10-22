@@ -4,7 +4,7 @@ import os
 from subprocess import Popen, PIPE
 from matplotlib.pyplot import *
 
-
+os.system("./solsys.exe 3 100000 20")
 output = Popen(["ls"], stdout=PIPE).communicate()[0]
 txtfiles = re.findall(".*\.txt",output,re.IGNORECASE)
 
@@ -22,7 +22,13 @@ for txtfile in txtfiles:
 			for identifier,value in zip(identifiers,values):
 				data[identifier].append(float(value))
 	print data.keys()
-	plot(data["x"],data["y"],label=txtfile[:-4])
+	if "sun" in txtfile:
+		plot(data["x"],data["y"],"r*",label=txtfile[:-4])
+	else:	
+		plot(data["x"],data["y"],"-",label=txtfile[:-4])
 	#plot(data["t"],data["x"],label="x")
 legend(loc="best")
+axis([-45,45,-45,45])
 show()
+if(True):
+	os.system("rm *.txt")
