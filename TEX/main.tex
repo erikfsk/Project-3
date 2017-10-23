@@ -1,0 +1,104 @@
+\input{preamble}
+\title{FYS4150}
+\begin{document}
+\mnfrontpage
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{FYS4150}
+\lhead{Erik Skaar \& Thomas Storaas}
+\fancyfoot[CE,LO]{\leftmark}
+\fancyfoot[LE,RO]{Page \number\value{page} of \pageref{LastPage}}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\section*{Abstract}%1
+\input{abstract/abstract}
+
+
+
+\pagebreak
+\section{Introduction}
+\input{intro/intro}
+
+
+
+\pagebreak
+\section{Theory}
+\input{theory/theory}
+
+
+
+\pagebreak
+\section{Method}
+\input{method/method}
+
+
+
+\pagebreak
+\section{Result}
+\input{result/result}
+
+
+
+\pagebreak
+\section{Discussion}
+\input{discussion/discussion}
+
+
+
+\pagebreak
+\section{Conclusion}
+\input{conclusion/conclusion}
+
+
+
+\pagebreak
+\section{Appendix}
+\input{appendix/appendix}
+
+%\printbibliography
+
+
+%\begin{align*}
+%&n \qquad &2^n - (-1)^n\\
+%&n+1 \qquad &2^{n+1} - (-1)^{n+1} \\
+%& &= 2(2^{n}) - (-1)^{n+1}\\
+%& &= 2(2^{n} + (-1)^n  + (-1)^{n+1}) - (-1)^{n+1}\\
+%& &= 2(2^{n} + (-1)^n  - (-1)^{n}) - (-1)^{n+1}\\
+%& &= 2(2^{n}- (-1)^{n}) + 2(-1)^n  + (-1)^{n}\\
+%& &= 2(2^{n}- (-1)^{n}) + 3(-1)^n \\
+%\end{align*}
+
+
+
+%\begin{tabular}{|c|c|c|c|c|c|c|}
+%	\hline 
+%	n & General & Specific & LU & fastest & slowest & $\frac{slowest}{fastest}$\\ 
+%	\hline
+%	10 & 6.5e-05 & 5e-06 & 4e-05 & Specific & General & 13.0\\ 
+%	\hline 
+%	100 & 7.5e-05 & 8e-06 & 0.0023 & Specific & LU & 287.5\\ 
+%	\hline 
+%	1000 & 0.00014 & 4e-05 & 0.26 & Specific & LU & 6500\\ 
+%	\hline
+%	10000 & 0.0007 & 0.0005 & 142.5 & Specific & LU & 285000 \\ 
+%	\hline
+%\end{tabular}
+
+%\begin{figure}[H]
+%		\centering
+%		\includegraphics[width=0.7\linewidth]{ab.png}
+%		\caption{Atomene er gule kuler, de elementære vektorene er blå og a vektorene er grønne.}
+%		\label{fig:ab}
+%\end{figure}
+\printbibliography
+%\inputminted{python}{plot_black.py}
+
+
+\end{document}
