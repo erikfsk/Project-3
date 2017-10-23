@@ -26,7 +26,7 @@ int main (int argc, char *argv[])
     double mass_pluto = 1.31*pow(10,22);
 
 
-    double t_start = 0; int t_end = atoi(argv[3]); int n = atoi(argv[2]);
+    double t_start = 0; int t_end = atoi(argv[2]); int n = atoi(argv[3]);
     double h = (t_end-t_start)/(n-1);
 
 

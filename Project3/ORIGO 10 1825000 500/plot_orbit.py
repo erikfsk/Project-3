@@ -22,9 +22,9 @@ for txtfile in txtfiles:
 				data[identifier].append(float(value))
 	print data.keys()
 	if "sun" in txtfile:
-		plot(data["x"],data["y"],"r*",label=txtfile[:-4])
+		plot(data["x"][::100],data["y"][::100],"r*",label=txtfile[:-4])
 	else:	
-		plot(data["x"],data["y"],"-",label=txtfile[:-4])
+		plot(data["x"][::100],data["y"][::100],"o",label=txtfile[:-4])
 	#plot(data["t"],data["x"],label="x")
 legend(loc="best")
 axis([-45,45,-45,45])

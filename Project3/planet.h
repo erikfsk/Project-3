@@ -27,14 +27,6 @@ public:
     planet(char* name, double M,double x,double y,double z,double vx, double vy,double vz);
 
     // Functions
-
-    double get_Vx();
-    double get_Vy();
-    double get_Vz();
-
-    double get_x();
-    double get_y();
-    double get_z();
     double distance(planet otherPlanet);
     
     void Acceleration_reset();
