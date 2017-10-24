@@ -83,20 +83,84 @@ Applying this to equation (\ref{eq:acceleration_all}), we get:
 	\label{eq:acceleration_all_au}
 \end{align}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{prehelion}
+
 
 \todo{since this is not implemented in the code yet nothing is writen}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{Numerical methods}
+
+Equation (\ref{eq:acceleration_all_au}) initial conditions for velocity and position determines the orbit of the planets. 
+These equations are for x,y,z direction and when writen out you get a coupled set of differential equations. This set is near impossible to solve analytically. It might be impossible. We will use numerical methods to solve this set. More specifically we will use the Forward Euler method and the Velocity-Verlet method. A given $t_i$ is equal to $t_0 + ih$, where $h = (t_{0} + t_{n})/n $.
 
 \subsubsection{Forward Euler}
 
+Both method use a Taylor polynomial approximation to solve the set of differential equation. The Forward Euler use the first order Taylor polynomial. With $r'(t) = v(t)$ and $v'(t) = a(t)$ the Forward Euler method result in: 
+ 
+\begin{align}
+	&\vec{r_i}(t+h) \approx \vec{r_i}(t) + h \vec{v_i}(t)
+	\\
+	&\vec{v_i}(t+h) \approx \vec{v_i}(t) + h \vec{a}(t)
+	\label{eq:euler}
+\end{align}
+
+The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \todo{REF TO LECTURE NOTES}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to h. 
+
 \subsubsection{Velocity-Verlet}
 
+You guessed it, this is the second order Taylor polynomial. . As I said the Velocity-Verlet method is based on a Taylor polynomial approximation. And this is the second order. 
 
+\begin{align}
+	&\vec{r_i}(t+h) \approx \vec{r_i}(t) + h \vec{v_i}(t) + \frac{1}{2} h^2 a(t)
+	\\
+	&\vec{v_i}(t+h) \approx \vec{v_i}(t) + h \vec{a}(t) + \frac{1}{2} h^2 \vec{a}'(t)
+	\label{eq:verlet}
+\end{align}
 
+Since we have no formula for the derivative of a, we use the approximation: 
+\todo{ER DET DELT PÅ 2 ELLER h? } 
 
+\begin{align*}
+	\vec{a}'(t) \approx \frac{\vec{a}(t+h) - \vec{a}(t)}{h}
+\end{align*}
 
+We simply update the position first. We keep the old acceleration and calculate the acceleration at the new position.  Using this equation (\ref{eq:verlet}) we get: 
+
+\begin{align*}
+	&\vec{v_i}(t+h) \approx \vec{v_i}(t) + h \vec{a}(t) + \frac{1}{2} h(\vec{a}(t+h) - \vec{a}(t))
+	\\
+	&\vec{v_i}(t+h) \approx \vec{v_i}(t) + \frac{1}{2} h(\vec{a}(t+h) + \vec{a}(t))
+\end{align*}
+
+The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \todo{REF TO LECTURE NOTES}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to $h^2$. This is one order of magnitude better, then the Forward Euler method. 
 
 
 

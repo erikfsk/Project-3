@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.15)  24 OCT 2017 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.15)  24 OCT 2017 20:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2714,15 +2714,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count418
 
-<mnfrontpage-images/mnfrontpage-bg-web-3.jpg, id=107, 639.38875pt x 886.31125pt
->
+<mnfrontpage-images/mnfrontpage-bg-web-3.jpg, id=39, 639.38875pt x 886.31125pt>
 File: mnfrontpage-images/mnfrontpage-bg-web-3.jpg Graphic file (type jpg)
- <use mnfrontpage-images/mnfrontpage-bg-web-3.jpg>
+<use mnfrontpage-images/mnfrontpage-bg-web-3.jpg>
 Package pdftex.def Info: mnfrontpage-images/mnfrontpage-bg-web-3.jpg used on in
 put line 4.
 (pdftex.def)             Requested size: 639.38718pt x 886.30908pt.
 
-<mnfrontpage-images/mnfrontpage-apollon.pdf, id=108, 142.5325pt x 142.5325pt>
+<mnfrontpage-images/mnfrontpage-apollon.pdf, id=40, 142.5325pt x 142.5325pt>
 File: mnfrontpage-images/mnfrontpage-apollon.pdf Graphic file (type pdf)
 
 <use mnfrontpage-images/mnfrontpage-apollon.pdf>
@@ -2730,8 +2729,8 @@ Package pdftex.def Info: mnfrontpage-images/mnfrontpage-apollon.pdf used on inp
 ut line 4.
 (pdftex.def)             Requested size: 76.82243pt x 76.82285pt.
 
-<mnfrontpage-images/mnfrontpage-logo-fys-eng.pdf, id=109, 536.0025pt x 74.2775p
-t>
+<mnfrontpage-images/mnfrontpage-logo-fys-eng.pdf, id=41, 536.0025pt x 74.2775pt
+>
 File: mnfrontpage-images/mnfrontpage-logo-fys-eng.pdf Graphic file (type pdf)
  <use mnfrontpage-images/mnfrontpage-logo-fys-eng.pdf>
 Package pdftex.def Info: mnfrontpage-images/mnfrontpage-logo-fys-eng.pdf used o
@@ -2771,6 +2770,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
+
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 27.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -3127,6 +3129,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 33.
+
 [2] (./theory/theory.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
@@ -3143,14 +3148,92 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3])
+
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 60.
+
+[3]
+Overfull \hbox (19.28702pt too wide) in paragraph at lines 135--135
+\T1/cmr/m/n/12 LECTU- 
+ []
+
+
+Overfull \hbox (19.28702pt too wide) in paragraph at lines 135--135
+\T1/cmr/m/n/12 LECTU- 
+ []
+
+
+Overfull \hbox (19.28702pt too wide) in paragraph at lines 135--135
+\T1/cmr/m/n/12 LECTU- 
+ []
+
+
+Overfull \hbox (19.28702pt too wide) in paragraph at lines 135--135
+\T1/cmr/m/n/12 LECTU- 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] (./method/method.tex)
+
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 146.
+
+[4]
+Overfull \hbox (6.07358pt too wide) in paragraph at lines 149--149
+\T1/cmr/m/n/12 DELT 
+ []
+
+
+Overfull \hbox (6.07358pt too wide) in paragraph at lines 149--149
+\T1/cmr/m/n/12 DELT 
+ []
+
+
+Overfull \hbox (6.07358pt too wide) in paragraph at lines 149--149
+\T1/cmr/m/n/12 DELT 
+ []
+
+
+Overfull \hbox (6.07358pt too wide) in paragraph at lines 149--149
+\T1/cmr/m/n/12 DELT 
+ []
+
+
+LaTeX Warning: Reference `eq:verlet' on page 5 undefined on input line 155.
+
+
+Overfull \hbox (19.28702pt too wide) in paragraph at lines 163--163
+\T1/cmr/m/n/12 LECTU- 
+ []
+
+
+Overfull \hbox (19.28702pt too wide) in paragraph at lines 163--163
+\T1/cmr/m/n/12 LECTU- 
+ []
+
+
+Overfull \hbox (19.28702pt too wide) in paragraph at lines 163--163
+\T1/cmr/m/n/12 LECTU- 
+ []
+
+
+Overfull \hbox (19.28702pt too wide) in paragraph at lines 163--163
+\T1/cmr/m/n/12 LECTU- 
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 39.
+
+[5] (./method/method.tex)
 Overfull \hbox (10.54538pt too wide) in paragraph at lines 1--41
 $\OT1/cmr/m/n/12 2458045\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 500000000 = \OML/cmm/
 m/it/12 A:D:\OT1/cmr/m/n/12 2017 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 Oct \OMS
@@ -3176,30 +3259,45 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5] (./result/result.tex)
+
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 45.
+
+[6] (./result/result.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] (./discussion/discussion.tex)
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 51.
+
+[7] (./discussion/discussion.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7] (./conclusion/conclusion.tex)
+
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 57.
+
+[8] (./conclusion/conclusion.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] (./appendix/appendix.tex)
+
+LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 63.
+
+[9] (./appendix/appendix.tex)
 
 LaTeX Warning: Empty bibliography on input line 101.
+
+
+Package lastpage Warning: Rerun to get the references right on input line 105.
 
 
 AED: lastpage setting LastPage
@@ -3209,27 +3307,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9]
+
+LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 105.
+
+[10]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4224DBB54367C26A7EEC37910E54D0F8;1610.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 1CE98B7B3EC762D902881EADDE26C89E;472
+(rerunfilecheck)             After:  4224DBB54367C26A7EEC37910E54D0F8;1610.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
  ) 
 Here is how much of TeX's memory you used:
- 41337 strings out of 493089
- 867467 string characters out of 6134842
- 1349793 words of memory out of 5000000
+ 41345 strings out of 493089
+ 867706 string characters out of 6134842
+ 1356872 words of memory out of 5000000
  44168 multiletter control sequences out of 15000+600000
  25551 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,16n,76p,10449b,1572s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,16n,76p,10449b,1582s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
@@ -3243,10 +3357,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on main.pdf (10 pages, 417152 bytes).
+Output written on main.pdf (11 pages, 419978 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 239 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 228 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 196 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
 
