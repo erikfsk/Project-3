@@ -1,24 +1,115 @@
 \subsection{Gravitation}
 
+We will simulate the solar system with only the gravitational force affecting the planets.  Newton's gravitational law is stated in equation (\ref{eq:newton}). Where G is the gravitational constant ($6.67 \cdot 10^{-11} \rm{Nm^2/s^2}$), r is the distance between the planets, m is the mass of the object and M is the mass of the other object.
 
 \begin{align}
 	\vec{F_G}  =\frac{GmM}{\vec{|r|}^3}\vec{r}
+	\label{eq:newton}
 \end{align}
 
+Thankfully for us the force is an attractive force. It is worth noting that if the sun is at origo distance is simply the norm position vector of the planet. From now on we will denoted the different masses with $M_{planet name}$ except for the sun that has the special symbol $M_{\odot}$. 
+\\
+\\
+If you have n object attracting each other the total gravitational force, $F_k$, for each object is: 
+
+
+\begin{align}
+	F_k = 
+	\sum_{i = 1}^{N}
+	\vec{F_i}  
+	=
+	\frac{Gm_km_i}
+	{\vec{|r_k - r_i|}^3}
+	(\vec{r_k} - \vec{r_i})
+	(1 - \delta_{k,i})
+	\label{eq:newton_all}
+\end{align}
+
+Where $\delta_{k,i}$ is the function:
+
 \begin{align*}
-\sum_{N}^{i = 1} 
-\vec{F_i}  
-=
-\frac{Gm_iM_i}
-{\vec{|r_i - r_j|}^3}
-\vec{r_i - r_j}
+	\delta_{k,i} = \left\{\begin{matrix}
+					1 & \text{if} \quad k =  i\\
+					0 & \text{if} \quad k \neq i 
+					\end{matrix}\right.
 \end{align*}
+
+
+
+We can use Newton's second law to determine the accelration of the planet. Newton's second law state $F = m\vec{a}$. Which translate to:
+
+\begin{align}
+	a_k
+	=
+	\sum_{i = 1}^{N}
+	\frac{Gm_i}
+	{|\vec{r_k} - \vec{r_i}|^3}
+	(\vec{r_k} - \vec{r_i})
+	(1 - \delta_{k,i})
+	\label{eq:acceleration_all}
+\end{align}
+
+
+
 \subsection{Units}
+As a famous person once said, \"If you use seconds and meters you will not finish within the deadline\". I think our professor, Morten Hjorth-Jensen, is on to something. Seconds and meters are impractical in this project. Therefore we use more suitable units. The distance between the earth and sun, 149 597 870 691 meter, is defined as one astronomical unit (au). For time one year seems reasonable. 
+These are the units that will be used in this project. 
+\\
+\\
+We can now express the gravitational constant with these units. To do this we use the formula for the acceleration for a circular orbit is $\frac{v^2}{r}$. Combine this with the gravitational law, we get: 
 
+\begin{align*}
+	\frac{v^2}{r} =
+	\frac{GM_{\odot}}{\vec{|r|}^3}\vec{r} 
+	\implies 
+	G
+	=
+	\frac{v^2 r}{M_{\odot}} = \frac{\rm{au} (2\pi \cdot \rm{au/year})^2}{M_{\odot}}
+	=
+	\frac{4\pi^2}
+	{M_{\odot}} \rm{au^3/year^2}
+\end{align*}
 
+Applying this to equation (\ref{eq:acceleration_all}), we get: 
+
+\begin{align}
+	a_k
+	=
+	\sum_{i = 1}^{N}
+	4 \pi \frac{m_i}{M_{\odot}}
+	\frac{(\vec{r_k} - \vec{r_i})}
+	{|\vec{r_k} - \vec{r_i}|^3}
+	(1 - \delta_{k,i}) \rm{au^3/year^2}
+	\label{eq:acceleration_all_au}
+\end{align}
+
+\subsection{prehelion}
+
+\todo{since this is not implemented in the code yet nothing is writen}
 
 \subsection{Numerical methods}
 
 \subsubsection{Forward Euler}
 
 \subsubsection{Velocity-Verlet}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
