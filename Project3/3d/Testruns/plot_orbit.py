@@ -29,13 +29,13 @@ for txtfile in txtfiles:
 	#plot(data["t"],data["x"],label="x")
 
 names = ["Earth, v = $1.4\pi $ A.U.",
-			"Earth, v = $1.8\pi $ A.U.",
 			"Earth, v = $2\pi $ A.U.",
 			"Earth, v = $2.4\pi $ A.U.",
 			"Earth, v = $2.6\pi $ A.U.",
 			"Earth, v = $3\pi $ A.U.",
 			"Earth, v = $8.8 $ A.U.",
-			"Earth, v = $8.9 $ A.U."]
+			"Earth, v = $8.9 $ A.U.",
+			"Sun"]
 legend(names,loc="best")
 axis([-7,7,-7,7])
 show()
