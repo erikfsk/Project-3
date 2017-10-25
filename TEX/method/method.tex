@@ -1,3 +1,19 @@
-$2458045.500000000 = A.D. 2017-Oct-19 00:00:00.0000 TDB 
- X = 2.213296131976958E-03 Y = 5.740795718142255E-03 Z =-1.300333836064062E-04
- VX=-5.236918819978495E-06 VY= 5.487345385589584E-06 VZ= 1.229796132639033E-07$
+\subsection{Implementation of code}
+
+The implementation is writen in c++ and is object oriented. We found it natural to divide the project in to two classes and one main program. 
+\\
+\\
+We made one class for the planet (\href{https://github.com/erikfsk/Project-3/blob/master/Project3/planet.cpp}{\textcolor{blue}{planet.cpp}} and \href{https://github.com/erikfsk/Project-3/blob/master/Project3/planet.h}{\textcolor{blue}{planet.h}}). This class has the variables for the position, velocity and mass for the specific planet. As well as a filename to write the output to. The class has methods for updating position, velocity and acceleration as well as methods for writing to a file. 
+\\
+\\
+The second class is for the solarsystem (\href{https://github.com/erikfsk/Project-3/blob/master/Project3/solarsystem.cpp}{\textcolor{blue}{solarsystem.cpp}} and \href{https://github.com/erikfsk/Project-3/blob/master/Project3/solarsystem.h}{\textcolor{blue}{solsystem.h}}). The solar system contain a list with all the planets and has methods to make the planets move and react to each other. You can look at the solar system as a class with for-loops for the planets. 
+\\
+\\
+The \href{https://github.com/erikfsk/Project-3/blob/master/Project3/main.cpp}{\textcolor{blue}{main.cpp}} program is where all the inputs to the solar system is given. Here all the initial condition for the planets are stated and organized for proper input to the solarsystem class. 
+\\
+\\
+All these programs are combined with \href{https://github.com/erikfsk/Project-3/blob/master/Project3/makefile}{\textcolor{blue}{makefile}}. When this is done the \href{https://github.com/erikfsk/Project-3/blob/master/Project3/solsys.exe}{\textcolor{blue}{solsys.exe}} will be made. Takes in three arguments. The first argument is the number of planets that you would like to simulate. This is a preset list of the bodies in the solarsystem. Where the Sun is the first element, Earth is the second and Jupiter is the third. After that they ascend based on radius. The second argument is the end time measured in years from now. The start time is set to 19th of october 2017. This is because this is the time that the intial values were obtained from NASA \todo{REF NASA}. Finally the third argument is the number of steps, n. \todo{SJEKK AT DETTE STEMMER NÅR VI LEVERER}
+
+%$2458045.500000000 = A.D. 2017-Oct-19 00:00:00.0000 TDB 
+%X = 2.213296131976958E-03 Y = 5.740795718142255E-03 Z =-1.300333836064062E-04
+%VX=-5.236918819978495E-06 VY= 5.487345385589584E-06 VZ= 1.229796132639033E-07$

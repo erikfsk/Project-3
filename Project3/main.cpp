@@ -155,3 +155,8 @@ int main (int argc, char *argv[])
     solarsystem first_try = solarsystem(system_of_planets,nr_planets);
     first_try.solve_verlet(n,h);
 }
+
+
+//$2458045.500000000 = A.D. 2017-Oct-19 00:00:00.0000 TDB  SUN 
+//X = 2.213296131976958E-03 Y = 5.740795718142255E-03 Z =-1.300333836064062E-04
+//VX=-5.236918819978495E-06 VY= 5.487345385589584E-06 VZ= 1.229796132639033E-07$
