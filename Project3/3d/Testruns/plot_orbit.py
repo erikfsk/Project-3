@@ -32,10 +32,13 @@ names = ["Earth, v = $1.4\pi $ A.U.",
 			"Earth, v = $2\pi $ A.U.",
 			"Earth, v = $2.4\pi $ A.U.",
 			"Earth, v = $2.6\pi $ A.U.",
-			"Earth, v = $3\pi $ A.U.",
 			"Earth, v = $8.8 $ A.U.",
 			"Earth, v = $8.9 $ A.U.",
+			"Earth, v = $3\pi $ A.U.",
 			"Sun"]
 legend(names,loc="best")
+grid("on")
+xlabel("X [au]")
+ylabel("Y [au]")
 axis([-7,7,-7,7])
 show()
