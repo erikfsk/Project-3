@@ -16,14 +16,14 @@
 \contentsline {subsubsection}{\numberline {4.1.1}Stability}{7}{subsubsection.4.1.1}
 \contentsline {subsubsection}{\numberline {4.1.2}Conserved quantities}{8}{subsubsection.4.1.2}
 \contentsline {subsubsection}{\numberline {4.1.3}Escape velocity}{9}{subsubsection.4.1.3}
-\contentsline {subsection}{\numberline {4.2}Three body system}{10}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Fixed mass for jupitur}{10}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Varying mass for jupitur}{10}{subsubsection.4.2.2}
-\contentsline {subsection}{\numberline {4.3}Solar system}{10}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Three planets and all moving}{10}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Solar system all moving}{10}{subsubsection.4.3.2}
-\contentsline {subsection}{\numberline {4.4}The perihelion precession of Mercury}{10}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}missing this part}{10}{subsubsection.4.4.1}
-\contentsline {section}{\numberline {5}Discussion}{11}{section.5}
-\contentsline {section}{\numberline {6}Conclusion}{12}{section.6}
-\contentsline {section}{\numberline {7}Appendix}{13}{section.7}
+\contentsline {subsection}{\numberline {4.2}Three body system}{11}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Fixed mass for jupitur}{11}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Varying mass for jupitur}{11}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}Solar system}{12}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Three planets and all moving}{12}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Solar system all moving}{12}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}The perihelion precession of Mercury}{12}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}missing this part}{12}{subsubsection.4.4.1}
+\contentsline {section}{\numberline {5}Discussion}{13}{section.5}
+\contentsline {section}{\numberline {6}Conclusion}{14}{section.6}
+\contentsline {section}{\numberline {7}Appendix}{15}{section.7}
