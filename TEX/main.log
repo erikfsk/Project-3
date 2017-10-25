@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.15)  25 OCT 2017 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.15)  25 OCT 2017 18:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2919,7 +2919,26 @@ Overfull \hbox (5.22098pt too wide) in paragraph at lines 7--18
  []$[]$  $[]$ 
  []
 
-)
+<result/bilder/kin-pot-euler.pdf, id=231, 578.16pt x 433.62pt>
+File: result/bilder/kin-pot-euler.pdf Graphic file (type pdf)
+
+<use result/bilder/kin-pot-euler.pdf>
+Package pdftex.def Info: result/bilder/kin-pot-euler.pdf used on input line 54.
+
+(pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
+
+<result/bilder/kin-pot-verlet.pdf, id=232, 578.16pt x 433.62pt>
+File: result/bilder/kin-pot-verlet.pdf Graphic file (type pdf)
+
+<use result/bilder/kin-pot-verlet.pdf>
+Package pdftex.def Info: result/bilder/kin-pot-verlet.pdf used on input line 60
+.
+(pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
+
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 52--63
+ []$[]$  $[]$ 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2930,21 +2949,111 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex (file ./result/bilder/earth-sun-error.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
->] (./discussion/discussion.tex)
+>] <result/bilder/ang-momentum-euler.pdf, id=307, 578.16pt x 433.62pt>
+File: result/bilder/ang-momentum-euler.pdf Graphic file (type pdf)
+
+<use result/bilder/ang-momentum-euler.pdf>
+Package pdftex.def Info: result/bilder/ang-momentum-euler.pdf used on input lin
+e 71.
+(pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
+
+<result/bilder/ang-momentum-verlet.pdf, id=308, 578.16pt x 433.62pt>
+File: result/bilder/ang-momentum-verlet.pdf Graphic file (type pdf)
+
+<use result/bilder/ang-momentum-verlet.pdf>
+Package pdftex.def Info: result/bilder/ang-momentum-verlet.pdf used on input li
+ne 77.
+(pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
+
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 69--80
+ []$[]$  $[]$ 
+ []
+
+<result/bilder/momentum-euler.pdf, id=311, 578.16pt x 433.62pt>
+File: result/bilder/momentum-euler.pdf Graphic file (type pdf)
+
+<use result/bilder/momentum-euler.pdf>
+Package pdftex.def Info: result/bilder/momentum-euler.pdf used on input line 91
+.
+(pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
+
+<result/bilder/momentum-verlet.pdf, id=312, 578.16pt x 433.62pt>
+File: result/bilder/momentum-verlet.pdf Graphic file (type pdf)
+
+<use result/bilder/momentum-verlet.pdf>
+Package pdftex.def Info: result/bilder/momentum-verlet.pdf used on input line 9
+7.
+(pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
+
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 89--100
+ []$[]$  $[]$ 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] (./conclusion/conclusion.tex)
+[8 <./result/bilder/kin-pot-euler.pdf> <./result/bilder/kin-pot-verlet.pdf
+
+pdfTeX warning: pdflatex (file ./result/bilder/kin-pot-verlet.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./result/bilder/ang-momentum-euler.pdf
+
+pdfTeX warning: pdflatex (file ./result/bilder/ang-momentum-euler.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+> <./result/bilder/ang-momentum-verlet.pdf
+
+pdfTeX warning: pdflatex (file ./result/bilder/ang-momentum-verlet.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>] <result/bilder/escape-velocity.pdf, id=520, 666.69077pt x 540.21826pt>
+File: result/bilder/escape-velocity.pdf Graphic file (type pdf)
+
+<use result/bilder/escape-velocity.pdf>
+Package pdftex.def Info: result/bilder/escape-velocity.pdf used on input line 1
+25.
+(pdftex.def)             Requested size: 452.9679pt x 367.03856pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] (./appendix/appendix.tex)
+[9 <./result/bilder/momentum-euler.pdf> <./result/bilder/momentum-verlet.pdf
+
+pdfTeX warning: pdflatex (file ./result/bilder/momentum-verlet.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./result/bilder/escape-velocity.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11] (./discussion/discussion.tex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12] (./conclusion/conclusion.tex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13] (./appendix/appendix.tex)
 
 LaTeX Warning: Empty bibliography on input line 103.
 
@@ -2956,7 +3065,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
+[14]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
  (./main.aux)
@@ -2970,10 +3079,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 42447 strings out of 493089
- 888021 string characters out of 6134842
- 1372092 words of memory out of 5000000
- 45254 multiletter control sequences out of 15000+600000
+ 42506 strings out of 493089
+ 889710 string characters out of 6134842
+ 1375008 words of memory out of 5000000
+ 45296 multiletter control sequences out of 15000+600000
  26314 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,16n,76p,10449b,1582s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2991,10 +3100,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf
 ist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on main.pdf (11 pages, 457738 bytes).
+Output written on main.pdf (15 pages, 801370 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 756 PDF objects out of 1000 (max. 8388607)
+ 431 compressed objects within 5 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 

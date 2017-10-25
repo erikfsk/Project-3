@@ -34,8 +34,6 @@ planet::planet(char* name_in, double M, double x, double y, double z, double vx,
     oldacceleration[0] = acceleration[0];
     oldacceleration[1] = acceleration[1];
     oldacceleration[2] = acceleration[2];
-    potential = 0.;
-    kinetic = 0.;
 }
 
 

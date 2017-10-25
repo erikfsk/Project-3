@@ -37,6 +37,7 @@ int main (int argc, char *argv[])
         system_of_planets[0] = planet("sun.txt",4*M_PI*M_PI,0,0,0,0,0,0);
     }
 
+
     if(2 <= nr_planets){
         system_of_planets[1] = planet("earth.txt"                           //filename
                                         ,4*M_PI*M_PI*mass_earth/mass_sun    //Mass_ratio to sun
@@ -153,7 +154,23 @@ int main (int argc, char *argv[])
 
 
     solarsystem first_try = solarsystem(system_of_planets,nr_planets);
-    first_try.solve_euler_fixed_sun(n,h);
+
+    if(atoi(argv[4])){
+        boost::timer t_test;
+        t_test.elapsed();
+
+        boost::timer t_euler;
+        first_try.solve_euler_fixed_sun(n,h); 
+        cout << "n=" << n << " euler " << t_euler.elapsed() << endl;    
+    } else {
+        boost::timer t_test;
+        t_test.elapsed();
+
+        boost::timer t_verlet;
+        first_try.solve_verlet_fixed_sun(n,h); 
+        cout << "n=" << n << " Verlet " << t_verlet.elapsed() << endl;    
+    }
+    
 }
 
 

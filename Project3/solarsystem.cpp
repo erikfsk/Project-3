@@ -25,6 +25,20 @@ void solarsystem::solve_verlet(int n, double t_step){
     }
 }
 
+void solarsystem::solve_euler_fixed_sun(int n, double t_step){
+    clear_file();
+    system_of_planets[0].write_to_file();
+    for(int i = 1; i<n ; i++){
+        Acceleration_reset();
+        Acceleration_fixed_sun();
+        euler_position(t_step,1);
+        euler_velocity(t_step,1);
+        if(i % 12 == 0){
+            write_to_file(1);
+        }
+    }
+}
+
 void solarsystem::solve_verlet_fixed_sun(int n, double t_step){
     Acceleration_fixed_sun();
     clear_file();
@@ -37,20 +51,7 @@ void solarsystem::solve_verlet_fixed_sun(int n, double t_step){
         if(i % 12 == 0){
             write_to_file(1);
         }
-    }
-}
 
-void solarsystem::solve_euler_fixed_sun(int n, double t_step){
-    clear_file();
-    system_of_planets[0].write_to_file();
-    for(int i = 1; i<n ; i++){
-        Acceleration_reset();
-        Acceleration_fixed_sun();
-        euler_position(t_step,1);
-        euler_velocity(t_step,1);
-        if(i % 12 == 0){
-            write_to_file(1);
-        }
     }
 }
 
