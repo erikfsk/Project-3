@@ -52,7 +52,7 @@ int main (int argc, char *argv[])
 
     if(3 <= nr_planets){
         system_of_planets[2] = planet("jupitur.txt"                         //filename
-                                        ,4*M_PI*M_PI*mass_jupitur/mass_sun  //Mass_ratio to sun
+                                        ,atoi(argv[4])*(1./1000)*4*M_PI*M_PI  //Mass_ratio to sun
                                         ,-4.576765120608809E+00             //Position x
                                         ,-2.933101794720733E+00             //Position y
                                         ,1.145345160230888E-01              //Position z

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.15)  25 OCT 2017 18:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.15)  25 OCT 2017 18:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2954,7 +2954,7 @@ File: result/bilder/ang-momentum-euler.pdf Graphic file (type pdf)
 
 <use result/bilder/ang-momentum-euler.pdf>
 Package pdftex.def Info: result/bilder/ang-momentum-euler.pdf used on input lin
-e 71.
+e 73.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
 <result/bilder/ang-momentum-verlet.pdf, id=308, 578.16pt x 433.62pt>
@@ -2962,10 +2962,10 @@ File: result/bilder/ang-momentum-verlet.pdf Graphic file (type pdf)
 
 <use result/bilder/ang-momentum-verlet.pdf>
 Package pdftex.def Info: result/bilder/ang-momentum-verlet.pdf used on input li
-ne 77.
+ne 79.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 69--80
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 71--82
  []$[]$  $[]$ 
  []
 
@@ -2973,7 +2973,7 @@ Overfull \hbox (5.22098pt too wide) in paragraph at lines 69--80
 File: result/bilder/momentum-euler.pdf Graphic file (type pdf)
 
 <use result/bilder/momentum-euler.pdf>
-Package pdftex.def Info: result/bilder/momentum-euler.pdf used on input line 91
+Package pdftex.def Info: result/bilder/momentum-euler.pdf used on input line 94
 .
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
@@ -2981,11 +2981,11 @@ Package pdftex.def Info: result/bilder/momentum-euler.pdf used on input line 91
 File: result/bilder/momentum-verlet.pdf Graphic file (type pdf)
 
 <use result/bilder/momentum-verlet.pdf>
-Package pdftex.def Info: result/bilder/momentum-verlet.pdf used on input line 9
-7.
+Package pdftex.def Info: result/bilder/momentum-verlet.pdf used on input line 1
+00.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 89--100
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 92--103
  []$[]$  $[]$ 
  []
 
@@ -3007,12 +3007,12 @@ lusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./result/bilder/ang-momentum-verlet.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
->] <result/bilder/escape-velocity.pdf, id=520, 666.69077pt x 540.21826pt>
+>] <result/bilder/escape-velocity.pdf, id=522, 666.69077pt x 540.21826pt>
 File: result/bilder/escape-velocity.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity.pdf>
 Package pdftex.def Info: result/bilder/escape-velocity.pdf used on input line 1
-25.
+29.
 (pdftex.def)             Requested size: 452.9679pt x 367.03856pt.
 
 
@@ -3079,10 +3079,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 42506 strings out of 493089
- 889710 string characters out of 6134842
- 1375008 words of memory out of 5000000
- 45296 multiletter control sequences out of 15000+600000
+ 42524 strings out of 493089
+ 890163 string characters out of 6134842
+ 1373964 words of memory out of 5000000
+ 45311 multiletter control sequences out of 15000+600000
  26314 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,16n,76p,10449b,1582s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3100,10 +3100,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf
 ist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on main.pdf (15 pages, 801370 bytes).
+Output written on main.pdf (15 pages, 801287 bytes).
 PDF statistics:
- 756 PDF objects out of 1000 (max. 8388607)
- 431 compressed objects within 5 object streams
- 67 named destinations out of 1000 (max. 500000)
+ 759 PDF objects out of 1000 (max. 8388607)
+ 434 compressed objects within 5 object streams
+ 70 named destinations out of 1000 (max. 500000)
  281 words of extra memory for PDF output out of 10000 (max. 10000000)
 
