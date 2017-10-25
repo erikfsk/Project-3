@@ -36,6 +36,9 @@ public:
     void verlet_velocity(double t_step);
     void verlet_position(double t_step);
 
+    void euler_velocity(double t_step);
+    void euler_position(double t_step);
+
     bool clear_file();
     bool write_to_file();
     double KineticEnergy();

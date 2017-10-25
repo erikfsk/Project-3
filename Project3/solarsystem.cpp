@@ -40,6 +40,20 @@ void solarsystem::solve_verlet_fixed_sun(int n, double t_step){
     }
 }
 
+void solarsystem::solve_euler_fixed_sun(int n, double t_step){
+    clear_file();
+    system_of_planets[0].write_to_file();
+    for(int i = 1; i<n ; i++){
+        Acceleration_reset();
+        Acceleration_fixed_sun();
+        euler_position(t_step,1);
+        euler_velocity(t_step,1);
+        if(i % 12 == 0){
+            write_to_file(1);
+        }
+    }
+}
+
 void solarsystem::solve_verlet_only_from_sun(int n, double t_step){
     Acceleration_only_from_sun();
     clear_file();
@@ -70,6 +84,15 @@ void solarsystem::Acceleration(){
     return ; 
 }
 
+
+void solarsystem::Acceleration_reset(){
+    for(int i = 0; i < nr_of_planets; i++){
+        system_of_planets[i].Acceleration_reset();
+    }
+    return ;
+}
+
+
 void solarsystem::Acceleration_fixed_sun(){
     for(int i=0; i<nr_of_planets-1; i++){
         for(int j=i+1; j<nr_of_planets; j++){
@@ -82,6 +105,7 @@ void solarsystem::Acceleration_fixed_sun(){
     return ; 
 }
 
+
 void solarsystem::Acceleration_only_from_sun(){
     for(int i=1; i<nr_of_planets; i++){
         system_of_planets[i].Acceleration(system_of_planets[0],1);    
@@ -93,12 +117,10 @@ void solarsystem::Acceleration_only_from_sun(){
 
 
 
-void solarsystem::Acceleration_reset(){
-    for(int i = 0; i < nr_of_planets; i++){
-        system_of_planets[i].Acceleration_reset();
-    }
-    return ;
-}
+
+
+
+
 
 void solarsystem::verlet_position(double t_step,int i){
     for(i; i < nr_of_planets; i++){
@@ -113,6 +135,37 @@ void solarsystem::verlet_velocity(double t_step,int i){
     }
     return ;
 }
+
+
+
+
+
+
+
+
+
+
+
+void solarsystem::euler_position(double t_step,int i){
+    for(i; i < nr_of_planets; i++){
+        system_of_planets[i].verlet_position(t_step);
+    }
+    return ;
+}
+
+void solarsystem::euler_velocity(double t_step,int i){
+    for(i; i < nr_of_planets; i++){
+        system_of_planets[i].verlet_velocity(t_step);
+    }
+    return ;
+}
+
+
+
+
+
+
+
 
 
 

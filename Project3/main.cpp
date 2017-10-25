@@ -153,7 +153,7 @@ int main (int argc, char *argv[])
 
 
     solarsystem first_try = solarsystem(system_of_planets,nr_planets);
-    first_try.solve_verlet(n,h);
+    first_try.solve_euler_fixed_sun(n,h);
 }
 
 
