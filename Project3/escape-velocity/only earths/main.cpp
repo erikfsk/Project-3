@@ -131,7 +131,7 @@ int main (int argc, char *argv[])
 
 
     if(9 <= nr_planets){
-        system_of_planets[8] = planet("earth3.txt"                           //filename
+        system_of_planets[8] = planet("earth93.txt"                           //filename
                                         ,4*M_PI*M_PI*mass_earth/mass_sun    //Mass_ratio to sun
                                         ,1                                  //Position x
                                         ,0                                  //Position y

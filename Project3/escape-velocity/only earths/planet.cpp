@@ -61,7 +61,7 @@ double planet::distance(planet otherPlanet)
 double planet::GravitationalForce(planet otherPlanet,double Gconst)
 {
     double r = this->distance(otherPlanet);
-    if(r!=0) return Gconst*this->mass*otherPlanet.mass/(r*r);
+    if(r!=0) return Gconst*this->mass*otherPlanet.mass/(pow(r,2.75));
     else return 0;
 }
 
