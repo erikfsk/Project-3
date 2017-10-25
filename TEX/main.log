@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.15)  25 OCT 2017 20:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.15)  25 OCT 2017 20:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3007,12 +3007,16 @@ lusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./result/bilder/ang-momentum-verlet.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
->] <result/bilder/escape-velocity.pdf, id=522, 666.69077pt x 540.21826pt>
+>]
+
+LaTeX Warning: Marginpar on page 9 moved.
+
+<result/bilder/escape-velocity.pdf, id=522, 666.69077pt x 540.21826pt>
 File: result/bilder/escape-velocity.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity.pdf>
 Package pdftex.def Info: result/bilder/escape-velocity.pdf used on input line 1
-31.
+33.
 (pdftex.def)             Requested size: 226.48395pt x 183.51515pt.
 
 <result/bilder/escape-velocity-r25.pdf, id=523, 578.16pt x 433.62pt>
@@ -3020,10 +3024,10 @@ File: result/bilder/escape-velocity-r25.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity-r25.pdf>
 Package pdftex.def Info: result/bilder/escape-velocity-r25.pdf used on input li
-ne 137.
+ne 139.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 129--140
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 131--142
  []$[]$  $[]$ 
  []
 
@@ -3032,7 +3036,7 @@ File: result/bilder/escape-velocity-r275.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity-r275.pdf>
 Package pdftex.def Info: result/bilder/escape-velocity-r275.pdf used on input l
-ine 151.
+ine 153.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
 <result/bilder/escape-velocity-r3.pdf, id=529, 578.16pt x 433.62pt>
@@ -3040,10 +3044,10 @@ File: result/bilder/escape-velocity-r3.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity-r3.pdf>
 Package pdftex.def Info: result/bilder/escape-velocity-r3.pdf used on input lin
-e 157.
+e 159.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 149--160
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 151--162
  []$[]$  $[]$ 
  []
 
@@ -3065,11 +3069,11 @@ ion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./result/bilder/escape-velocity-r25.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
->] <result/bilder/jupitur-mass.pdf, id=736, 627.84563pt x 433.62pt>
+>] <result/bilder/jupitur-mass.pdf, id=737, 627.84563pt x 433.62pt>
 File: result/bilder/jupitur-mass.pdf Graphic file (type pdf)
 
 <use result/bilder/jupitur-mass.pdf>
-Package pdftex.def Info: result/bilder/jupitur-mass.pdf used on input line 194.
+Package pdftex.def Info: result/bilder/jupitur-mass.pdf used on input line 196.
 
 (pdftex.def)             Requested size: 452.9679pt x 312.83473pt.
 
@@ -3084,23 +3088,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex (file ./result/bilder/escape-velocity-r3.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
->] <result/bilder/jupitur-mass-three.pdf, id=845, 729.92702pt x 455.30101pt>
+>] <result/bilder/jupitur-mass-three.pdf, id=846, 729.92702pt x 455.30101pt>
 File: result/bilder/jupitur-mass-three.pdf Graphic file (type pdf)
 
 <use result/bilder/jupitur-mass-three.pdf>
 Package pdftex.def Info: result/bilder/jupitur-mass-three.pdf used on input lin
-e 206.
+e 208.
 (pdftex.def)             Requested size: 226.48395pt x 141.2669pt.
 
-<result/bilder/jupitur-mass-two.pdf, id=846, 782.32277pt x 471.56174pt>
+<result/bilder/jupitur-mass-two.pdf, id=847, 782.32277pt x 471.56174pt>
 File: result/bilder/jupitur-mass-two.pdf Graphic file (type pdf)
 
 <use result/bilder/jupitur-mass-two.pdf>
 Package pdftex.def Info: result/bilder/jupitur-mass-two.pdf used on input line 
-212.
+214.
 (pdftex.def)             Requested size: 226.48395pt x 136.51913pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 204--215
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 206--217
  []$[]$  $[]$ 
  []
 
@@ -3160,20 +3164,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C872E13ADFD82941A545BCE6E05BA3DC;1682.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 42567 strings out of 493089
- 891527 string characters out of 6134842
- 1375067 words of memory out of 5000000
- 45343 multiletter control sequences out of 15000+600000
+ 42573 strings out of 493089
+ 891678 string characters out of 6134842
+ 1376154 words of memory out of 5000000
+ 45348 multiletter control sequences out of 15000+600000
  26314 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,16n,76p,10449b,1582s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3191,10 +3191,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf
 ist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on main.pdf (16 pages, 1030296 bytes).
+Output written on main.pdf (16 pages, 1030621 bytes).
 PDF statistics:
- 1052 PDF objects out of 1200 (max. 8388607)
- 523 compressed objects within 6 object streams
- 75 named destinations out of 1000 (max. 500000)
+ 1053 PDF objects out of 1200 (max. 8388607)
+ 524 compressed objects within 6 object streams
+ 76 named destinations out of 1000 (max. 500000)
  311 words of extra memory for PDF output out of 10000 (max. 10000000)
 
