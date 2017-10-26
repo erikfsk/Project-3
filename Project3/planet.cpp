@@ -125,6 +125,14 @@ void planet::Acceleration_reset(){
 }
 
 
+
+
+
+
+
+
+
+
 void planet::verlet_position(double t_step){
     //x[i] = x[i-1] + h*Vx[i-1] + (0.5*h*h*a*(x[i-1]));
     this->position[0] = this->position[0] + t_step*this->velocity[0] + (0.5*t_step*t_step*acceleration[0]);
@@ -133,11 +141,18 @@ void planet::verlet_position(double t_step){
 }
 
 void planet::verlet_velocity(double t_step){
-    //Vx[i] = Vx[i-1] + 0.5*h*(a*(x[i-1] + x[i]));
+    //Vx[i] = Vx[i-1] + 0.5*h*(ax[i-1] + ax[i]);
     this->velocity[0] = this->velocity[0] + (0.5*t_step*(acceleration[0]+oldacceleration[0]));
     this->velocity[1] = this->velocity[1] + (0.5*t_step*(acceleration[1]+oldacceleration[1]));
     this->velocity[2] = this->velocity[2] + (0.5*t_step*(acceleration[2]+oldacceleration[2]));
 }
+
+
+
+
+
+
+
 
 void planet::euler_position(double t_step){
     //x[i] = x[i-1] + h*Vx[i-1] + (0.5*h*h*a*(x[i-1]));
@@ -152,6 +167,16 @@ void planet::euler_velocity(double t_step){
     this->velocity[1] = this->velocity[1] + t_step*acceleration[1];
     this->velocity[2] = this->velocity[2] + t_step*acceleration[2];
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
