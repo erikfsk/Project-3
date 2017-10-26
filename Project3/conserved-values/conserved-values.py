@@ -37,21 +37,21 @@ for txtfile in txtfiles:
 
 
         title(txtfile[16:-4])
-        plot( sqrt(data["vx"]**2+data["vy"]**2)-\
-            sqrt(data["vx"][0]**2+data["vy"][0]**2),"-", label="Diff. momentum")
+        plot((sqrt(data["vx"]**2+data["vy"]**2)-\
+            sqrt(data["vx"][0]**2+data["vy"][0]**2)),"-", label="Diff. momentum")
         legend(loc="best")
         xlabel("iteration [n]")
-        ylabel("p$_i -$p$_0$")
+        ylabel("p$_i -$p$_0$ [kg$\cdot$m/s]")
         grid("on")
         show()
 
         title(txtfile[16:-4])
         ang_momentum_x = data["vx"] * data["y"] -data["vy"] * data["x"]
         ang_momentum = sqrt(ang_momentum_x**2)
-        plot(ang_momentum - ang_momentum[0],"-", label="Diff. angular momentum")
+        plot((ang_momentum - ang_momentum[0]),"-", label="Diff. angular momentum")
         legend(loc="best")
         xlabel("iteration [n]")
-        ylabel("$_i - \tau_0$")
+        ylabel("$\\tau_i - \\tau_0$ [$Nms$]")
         grid("on")
         show()
 

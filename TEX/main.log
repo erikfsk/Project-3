@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.15)  26 OCT 2017 20:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.15)  26 OCT 2017 20:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3029,7 +3029,7 @@ on: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./result/bilder/momentum-verlet.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
->] <result/bilder/escape-velocity.pdf, id=534, 666.69077pt x 540.21826pt>
+>] <result/bilder/escape-velocity.pdf, id=545, 666.69077pt x 540.21826pt>
 File: result/bilder/escape-velocity.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity.pdf>
@@ -3037,7 +3037,7 @@ Package pdftex.def Info: result/bilder/escape-velocity.pdf used on input line 1
 70.
 (pdftex.def)             Requested size: 226.48395pt x 183.51515pt.
 
-<result/bilder/escape-velocity-r25.pdf, id=535, 578.16pt x 433.62pt>
+<result/bilder/escape-velocity-r25.pdf, id=546, 578.16pt x 433.62pt>
 File: result/bilder/escape-velocity-r25.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity-r25.pdf>
@@ -3060,7 +3060,7 @@ et.pdf
 
 pdfTeX warning: pdflatex (file ./result/bilder/ang-momentum-verlet.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
->] <result/bilder/escape-velocity-r275.pdf, id=643, 578.16pt x 433.62pt>
+>] <result/bilder/escape-velocity-r275.pdf, id=659, 578.16pt x 433.62pt>
 File: result/bilder/escape-velocity-r275.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity-r275.pdf>
@@ -3068,7 +3068,7 @@ Package pdftex.def Info: result/bilder/escape-velocity-r275.pdf used on input l
 ine 189.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-<result/bilder/escape-velocity-r3.pdf, id=644, 578.16pt x 433.62pt>
+<result/bilder/escape-velocity-r3.pdf, id=660, 578.16pt x 433.62pt>
 File: result/bilder/escape-velocity-r3.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity-r3.pdf>
@@ -3099,7 +3099,7 @@ nclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./result/bilder/escape-velocity-r3.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
->] <result/bilder/jupitur-mass.pdf, id=852, 661.2705pt x 436.33014pt>
+>] <result/bilder/jupitur-mass.pdf, id=868, 661.2705pt x 436.33014pt>
 File: result/bilder/jupitur-mass.pdf Graphic file (type pdf)
 
 <use result/bilder/jupitur-mass.pdf>
@@ -3114,7 +3114,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12 <./result/bilder/jupitur-mass.pdf>]
-<result/bilder/jupitur-mass-three.pdf, id=891, 781.41937pt x 504.98663pt>
+<result/bilder/jupitur-mass-three.pdf, id=907, 781.41937pt x 504.98663pt>
 File: result/bilder/jupitur-mass-three.pdf Graphic file (type pdf)
 
 <use result/bilder/jupitur-mass-three.pdf>
@@ -3122,7 +3122,7 @@ Package pdftex.def Info: result/bilder/jupitur-mass-three.pdf used on input lin
 e 246.
 (pdftex.def)             Requested size: 226.48395pt x 146.36531pt.
 
-<result/bilder/jupitur-mass-two.pdf, id=892, 792.25986pt x 476.07861pt>
+<result/bilder/jupitur-mass-two.pdf, id=908, 792.25986pt x 476.07861pt>
 File: result/bilder/jupitur-mass-two.pdf Graphic file (type pdf)
 
 <use result/bilder/jupitur-mass-two.pdf>
@@ -3134,7 +3134,7 @@ Overfull \hbox (5.22098pt too wide) in paragraph at lines 244--255
  []$[]$  $[]$ 
  []
 
-<result/bilder/all-moving-jupitur.pdf, id=893, 672.11098pt x 522.15076pt>
+<result/bilder/all-moving-jupitur.pdf, id=909, 672.11098pt x 522.15076pt>
 File: result/bilder/all-moving-jupitur.pdf Graphic file (type pdf)
 
 <use result/bilder/all-moving-jupitur.pdf>
@@ -3142,7 +3142,7 @@ Package pdftex.def Info: result/bilder/all-moving-jupitur.pdf used on input lin
 e 278.
 (pdftex.def)             Requested size: 226.48395pt x 175.95137pt.
 
-<result/bilder/all-moving-jupitur-mass-center.pdf, id=894, 672.11098pt x 522.15
+<result/bilder/all-moving-jupitur-mass-center.pdf, id=910, 672.11098pt x 522.15
 076pt>
 File: result/bilder/all-moving-jupitur-mass-center.pdf Graphic file (type pdf)
  <use result/bilder/all-moving-jupitur-mass-center.pdf>
@@ -3154,7 +3154,7 @@ Overfull \hbox (5.22098pt too wide) in paragraph at lines 276--287
  []$[]$  $[]$ 
  []
 
-<result/bilder/all-moving-solarsystem.pdf, id=895, 778.70924pt x 486.01576pt>
+<result/bilder/all-moving-solarsystem.pdf, id=911, 778.70924pt x 486.01576pt>
 File: result/bilder/all-moving-solarsystem.pdf Graphic file (type pdf)
 
 <use result/bilder/all-moving-solarsystem.pdf>
@@ -3162,7 +3162,7 @@ Package pdftex.def Info: result/bilder/all-moving-solarsystem.pdf used on input
  line 297.
 (pdftex.def)             Requested size: 226.48395pt x 141.34883pt.
 
-<result/bilder/all-moving-solarsystem-zoom.pdf, id=896, 778.70924pt x 486.01576
+<result/bilder/all-moving-solarsystem-zoom.pdf, id=912, 778.70924pt x 486.01576
 pt>
 File: result/bilder/all-moving-solarsystem-zoom.pdf Graphic file (type pdf)
  <use result/bilder/all-moving-solarsystem-zoom.pdf>
@@ -3193,7 +3193,7 @@ lusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./result/bilder/all-moving-jupitur-mass-center.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
->] <result/bilder/perihelion.pdf, id=1047, 578.16pt x 433.62pt>
+>] <result/bilder/perihelion.pdf, id=1063, 578.16pt x 433.62pt>
 File: result/bilder/perihelion.pdf Graphic file (type pdf)
 
 <use result/bilder/perihelion.pdf>
@@ -3280,9 +3280,9 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf
 ist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on main.pdf (17 pages, 7551893 bytes).
+Output written on main.pdf (17 pages, 7558077 bytes).
 PDF statistics:
- 1255 PDF objects out of 1440 (max. 8388607)
+ 1271 PDF objects out of 1440 (max. 8388607)
  564 compressed objects within 6 object streams
  76 named destinations out of 1000 (max. 500000)
  328 words of extra memory for PDF output out of 10000 (max. 10000000)
