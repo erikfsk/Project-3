@@ -23,9 +23,13 @@ def get_data(txtfile):
 planet = get_data("mercury_8_.txt")
 planet2 = get_data("mercury_8.txt")
 #plot(sqrt(planet["x"]*planet["x"] + planet["y"]*planet["y"]),"r-",label="r")
-plot(arctan2(planet["y"],planet["x"])*(360/(2*pi))*3600,"g-",label="arctan(y/x)")
-plot(arctan2(planet2["y"],planet2["x"])*(360/(2*pi))*3600,"g-",label="arctan(y/x)")
+plot(arctan2(planet["y"],planet["x"])*(360/(2*pi))*3600,"-",label="Non relativistic correction")
+plot(arctan2(planet2["y"],planet2["x"])*(360/(2*pi))*3600,"-",label="Relativistic correction")
+xlabel("Year [year$_{Mercury}$]")
+ylabel("Arc'' [$\\frac{1}{60^2}^\circ$]")
 legend(loc="best")
+grid("on")
+savefig("test.pdf")
 show()
 """
 minimum_x_values = []

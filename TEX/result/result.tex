@@ -221,17 +221,23 @@ Personally I feel extremly lucky for living in a universe with a r dependency of
 
 \subsection{Three body system}
 
+All the figures in this section has been made from the directory \href{https://github.com/erikfsk/Project-3/tree/master/Project3/mass%20jupitur}{\textcolor{blue}{mass jupitur}}. In this directory there are different directories for the r dependency and a python script to generate graphs. The assignment said to try with mass multiplied with 10 and 1000. It was fun, so we did 10,100,1000 and 1100. Hope you enjoy the results. 
+
 \subsubsection{Fixed mass for jupitur}
+
+For a simulation with jupitur original mass 100000 points over 15 years is sufficient to calculate the orbits of the planets. The figure (\ref{fig:three-body}) is quit smooth and you should not expect to get any major change in the result even with many more points per year. 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{result/bilder/jupitur-mass.pdf}
-    \caption{\href{https://github.com/erikfsk/Project-3/blob/master/Project3/3a/plot_earth_sun.py}{\textcolor{blue}{plot\_earth\_sun.py}}}
+    \caption{Plot of the three body system with Earth, Jupitur and the sun. The graph is discussed in the paragraph above. }
     \label{fig:three-body}
 \end{figure}
 
 
 \subsubsection{Varying mass for jupitur}
+
+For varying mass it is mostly the same as for the original mass. For the mass multiplied with 10 and 100 the orbit is \"normal\" with some slight changes and you should not expect any major differences with higher amount of points per year. For the biggest masses the results vary much more on the number of steps per year. I found a couple of hundred thousand steps in total gave a good approximation. A bit higher step count makes earth disappear and a way bigger step count makes the earth come back to orbit like shown below. This is basicly the best of both worlds. The graphs is few point, so easy for python to plot, and has a pretty good approximation.
 
 \begin{figure}[H]
     \centering
@@ -246,7 +252,7 @@ Personally I feel extremly lucky for living in a universe with a r dependency of
         \includegraphics[width=\linewidth]{result/bilder/jupitur-mass-two.pdf}
         \caption{}
     \end{subfigure}
-    \caption{\href{https://github.com/erikfsk/Project-3/blob/master/Project3/3a/plot_earth_sun.py}{\textcolor{blue}{plot\_earth\_sun.py}}}
+    \caption{Both plot has the sun as a fixed point. What the graphs represent is discussed above and legend should be pretty self explanatory.}
     \label{fig:three-body-varying}
 \end{figure}
 
@@ -283,7 +289,14 @@ Personally I feel extremly lucky for living in a universe with a r dependency of
 
 \subsection{The perihelion precession of Mercury}
 
-\subsubsection{missing this part}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{result/bilder/perihelion.pdf}
+    \caption{EINSTEIN :D }
+    \label{fig:three-body}
+\end{figure}
+
+\todo{write about this fig}
 
 
 
