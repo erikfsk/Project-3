@@ -119,7 +119,7 @@ Let's solve it:
 
 
 
-\subsection{prehelion}
+\subsection{prehelion}\label{sec:perihelion}
 
 
 \todo{since this is not implemented in the code yet nothing is writen}
@@ -162,7 +162,7 @@ Discretized version. i is the object number and j is the time step:
 	&\vec{v_{i,j+1}} \approx \vec{v_{i,j}} + h \vec{a}_{i,j}
 \end{align*}
 
-The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \todo{REF TO LECTURE NOTES}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to h. 
+The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \cite{compphys}\todo{FIX REF}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to h. 
 
 \subsubsection{Velocity-Verlet}
 
@@ -198,7 +198,7 @@ Discretized version. i is the object number and j is the time step:
 \end{align*}
 
 
-The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \todo{REF TO LECTURE NOTES}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to $h^2$. This is one order of magnitude better, then the Forward Euler method. 
+The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \cite{compphys}\todo{FIX REF}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to $h^2$. This is one order of magnitude better, then the Forward Euler method. 
 
 
 

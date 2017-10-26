@@ -12,11 +12,42 @@ The second class is for the solarsystem (\href{https://github.com/erikfsk/Projec
 The \href{https://github.com/erikfsk/Project-3/blob/master/Project3/main.cpp}{\textcolor{blue}{main.cpp}} program is where all the inputs to the solar system is given. Here all the initial condition for the planets are stated and organized for proper input to the solarsystem class. 
 \\
 \\
-All these programs are combined with \href{https://github.com/erikfsk/Project-3/blob/master/Project3/makefile}{\textcolor{blue}{makefile}}. When this is done the \href{https://github.com/erikfsk/Project-3/blob/master/Project3/solsys.exe}{\textcolor{blue}{solsys.exe}} will be made. Takes in three arguments. The first argument is the number of planets that you would like to simulate. This is a preset list of the bodies in the solarsystem. Where the Sun is the first element, Earth is the second and Jupiter is the third. After that they ascend based on radius. The second argument is the end time measured in years from now. The start time is set to 19th of october 2017. This is because this is the time that the intial values were obtained from NASA \todo{REF NASA}. Finally the third argument is the number of steps, n. \todo{SJEKK AT DETTE STEMMER NÅR VI LEVERER}
+All these programs are combined with \href{https://github.com/erikfsk/Project-3/blob/master/Project3/makefile}{\textcolor{blue}{makefile}}. When this is done the \href{https://github.com/erikfsk/Project-3/blob/master/Project3/solsys.exe}{\textcolor{blue}{solsys.exe}} will be made. Takes in three arguments. The first argument is the number of planets that you would like to simulate. This is a preset list of the bodies in the solarsystem. Where the Sun is the first element, Earth is the second and Jupiter is the third. After that they ascend based on radius. The second argument is the end time measured in years from now. The start time is set to 19th of october 2017. This is because this is the time that the intial values were obtained from NASA \todo{REF NASA}. Finally the third argument is the number of steps, n. 
 \\
 \\
 Finally, in our github repository there is directories were earlier versions can be found. For instance the 
-\href{https://github.com/erikfsk/Project-3/tree/master/Project3/3a}{\textcolor{blue}{3a}} directory is the first version with no object oriented code. 
+\href{https://github.com/erikfsk/Project-3/tree/master/Project3/}{\textcolor{blue}{Project3}} directory is for where all the code is centered. In this directory there are many directories with different results files and python scripts for making figures. There are also a coupled of other main.cpp variants. These are for different assisgments in this project. It should be pretty self explanatory. 
+
+
+\subsection{FLOPs for the algorithms}\label{sec:flops}
+
+Let's talk FLOPs. 
+\\
+\\
+Common for both algorithms are calculation of the acceleration. 
+\\
+\\
+For all n planets you need to calculate for all n-1 planets:
+\begin{align*}
+	&1. \text{Subtract the x, y and z components (3 FLOPs).}
+	\\
+	&2. \text{Square the differences in the x, y and z components (3 FLOPs).}
+	\\
+	&3. \text{Add these differences (2 FLOPs).}
+	\\
+	&4. \text{Take the square root (1 FLOP2).}
+	\\
+	&5.	\text{Calculate the cube of the norm (2 FLOPs).}
+	\\
+	&6. \text{Divide 4$\pi$2 times the mass ratio (precalculated) by the cube of the norm (1 FLOP).}
+	\\
+	&7. \text{Multiply this factor by the differences in x, y and z positions (3 FLOPs).}
+	\\
+	&8. \text{Add these to the x, y and z components of the acceleration (3 FLOP).}
+\end{align*}
+
+
+
 
 %$2458045.500000000 = A.D. 2017-Oct-19 00:00:00.0000 TDB 
 %X = 2.213296131976958E-03 Y = 5.740795718142255E-03 Z =-1.300333836064062E-04

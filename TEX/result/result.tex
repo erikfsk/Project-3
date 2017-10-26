@@ -38,10 +38,9 @@
 \end{figure}
 
 
-\todo{REF FLOPS SECTION}
 \begin{center}
 \label{table:euler-verlet-time}
-\captionof{table}{Time table for the different algorithms. The algorithms use nearly the same time. This is not a shocker since the FLOPs are similar. Time grows very linear as expected from FLOPs. Disclaimer: this is only the result from one test, but several was done. Both algorithms were very close and it seem to be random which is fastest.
+\captionof{table}{Time table for the different algorithms. The algorithms use nearly the same time. This is not a shocker since the number of FLOPs for the algorithms are similar. Time grows very linear as expected from section \ref{flops}. Disclaimer: this is only the result from one test, but several was done. Both algorithms were very close and it seem to be random which is fastest.
 \\}
 \begin{tabular}{|c|c|c|c|c|c|}
     \hline 
@@ -268,6 +267,7 @@ For varying mass it is mostly the same as for the original mass. For the mass mu
 
 \subsection{Solar system}
 
+All the figures in this section was made from the results and python scripts in the directory \href{https://github.com/erikfsk/Project-3/tree/master/Project3/full-solarsystem}{\textcolor{blue}{full-solarsystem}}.
 
 \subsubsection{Three planets and all moving}
 
@@ -275,17 +275,17 @@ For varying mass it is mostly the same as for the original mass. For the mass mu
     \centering
     \begin{subfigure}{0.5\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{result/bilder/all-moving-jupitur.pdf}
+        \includegraphics[width=\linewidth]{result/bilder/all-moving-jupitur.png}
         \caption{}
     \end{subfigure}%
     ~ 
     \begin{subfigure}{0.5\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{result/bilder/all-moving-jupitur-mass-center.pdf}
+        \includegraphics[width=\linewidth]{result/bilder/all-moving-jupitur-mass-center.png}
         \caption{}
     \end{subfigure}
-    \caption{n = $10^5$ 15 years}
-    \label{fig:three-body-varying}
+    \caption{a) Shows the three body system solved with a moving sun. It has a n=$10^5$ and ran for 15 years. If this would be used for any tests I would recommend using more points. To use more points here would be stupid. You can't see the difference. b) is a zoom of the middle part of a). This is for verifying that the sun moves around the center of mass and is not drifting.}
+    \label{fig:three-body-moving}
 \end{figure}
 
 \subsubsection{Solar system all moving}
@@ -294,47 +294,32 @@ For varying mass it is mostly the same as for the original mass. For the mass mu
     \centering
     \begin{subfigure}{0.5\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{result/bilder/all-moving-solarsystem.pdf}
+        \includegraphics[width=\linewidth]{result/bilder/all-moving-solarsystem.png}
         \caption{}
     \end{subfigure}%
     ~ 
     \begin{subfigure}{0.5\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{result/bilder/all-moving-solarsystem-zoom.pdf}
+        \includegraphics[width=\linewidth]{result/bilder/all-moving-solarsystem-zoom.png}
         \caption{}
     \end{subfigure}
-    \caption{n = $10^6$ 300 years}
-    \label{fig:three-body-varying}
+    \caption{a) Shows the hole solar system solved with a moving sun. It has a n=$10^6$ and ran for 300 years. If this would be used for any tests I would recommend using more points, but this would be stupid for this figure, since you can't see the difference. b) is a zoom of the middle part of a). This is so you can see that they also move in orbits.}
+    \label{fig:solarsystem-moving}
 \end{figure}
-
-
-
-
-
-
-
-
-
 
 
 
 \subsection{The perihelion precession of Mercury}
 
+This has been discussed in section \ref{sec:perihelion}. The figure in this section was made from the results and python script in the directory \href{https://github.com/erikfsk/Project-3/tree/master/Project3/mercury-perihelion}{\textcolor{blue}{mercury-perihelion}}.
+
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{result/bilder/perihelion.pdf}
-    \caption{EINSTEIN :D }
-    \label{fig:three-body}
+    \includegraphics[width=\linewidth]{result/bilder/perihelion.png}
+    \caption{The assignment stated that after 100 years mercury perihelion should move about 43''. From the graphs we can see that it should move about 45''. This is probably duo to numerical inaccuracy. The slope's inaccuracy is proably caused by the numerical solver precision. In other words more points would increase the accuracy. The jumping up and down along the linear curve is probably duo to the computer's accuracy with numbers. This will also improve by more steps, but one of them might stop to improve before the other.}
+    \label{fig:perihelion}
 \end{figure}
-
-\todo{write about this fig}
-
-
-
-
-
-
-
 
 
 
