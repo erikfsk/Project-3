@@ -34,6 +34,8 @@ public:
     void Acceleration_fixed_sun();
     void Acceleration_only_from_sun();
     
+    void mass_center();
+    void remove_momentum();
 
     void verlet_position(double t_step, int i);
     void verlet_velocity(double t_step, int i);

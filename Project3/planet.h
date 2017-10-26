@@ -21,6 +21,7 @@ public:
     double oldacceleration[3];
     double potential;
     double kinetic;
+    char* name;
 
     // Initializers
     planet();
@@ -45,7 +46,7 @@ public:
     double PotentialEnergy(planet &otherPlanet, double Gconst, double epsilon);
 
 protected:
-    char* name;
+
 };
 
 #endif // PLANET_H

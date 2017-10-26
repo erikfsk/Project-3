@@ -51,7 +51,7 @@ We can use Newton's second law to determine the accelration of the planet. Newto
 
 
 
-\subsection{Units}
+\subsection{Units}\label{sec:units}
 As a famous person once said, \"If you use seconds and meters you will not finish within the deadline\". I think our professor, Morten Hjorth-Jensen, is on to something. Seconds and meters are impractical in this project. Therefore we use more suitable units. The distance between the earth and sun, 149 597 870 691 meter, is defined as one astronomical unit (au). For time one year seems reasonable. 
 These are the units that will be used in this project. 
 \\
@@ -84,11 +84,39 @@ Applying this to equation (\ref{eq:acceleration_all}), we get:
 \end{align}
 
 
+\subsubsection{Escape velocity}\label{sec:escape-velocity}
+
+Later in the project we are asked to find the escape velocity by trial and error. This question is basicly, when does the earth have enough kinetic energy to escape the potential. The potential is a integral from 0 to $\infty$ $F_G$ over $dr$. For a given planet with only the sun in the solar system the integral is from r to $\infty$. This is shown in equation (\ref{eq:escape-velocity}).  
 
 
+\begin{align}
+E_k =\int_r^\infty \frac{GmM}{\vec{|r|}^2} d\vec{r}\\
+\label{eq:escape-velocity}
+\end{align}
 
+Let's solve it: 
 
+\begin{align*}
+	&E_k =\int_r^\infty -\frac{GmM_\odot}{\vec{|r|}^2} d\vec{r}
+	\\
+	&\frac{1}{2}mv^2 = GmM_\odot \int_r^\infty -\frac{1}{\vec{|r|}^2} d\vec{r}
+	\\
+	&\text{G = 1, see section \ref{sec:units} for explanation.}
+	\\
+	&\frac{1}{2}v^2 = M_\odot \int_r^\infty -\frac{1}{\vec{|r|}^2} d\vec{r}
+	\\
+	&\frac{1}{2}v^2 = M_\odot \left[ \frac{1}{\vec{|r|}} \right]_r^\infty
+	\\
+	&v^2 = 2M_\odot \frac{1}{\vec{|r|}}
+	\\
+	&\text{r = 1, see section \ref{sec:units} for explanation.}
+	\\
+	&v = \sqrt{8\pi^2}
+	\\
+	&v \approx 8.88
+\end{align*}
 
+\todo{skal jeg ikke dele uttrykket på 3? men dette gir rett svar}
 
 
 
@@ -128,9 +156,16 @@ Both method use a Taylor polynomial approximation to solve the set of differenti
 \begin{align}
 	&\vec{r_i}(t+h) \approx \vec{r_i}(t) + h \vec{v_i}(t)
 	\\
-	&\vec{v_i}(t+h) \approx \vec{v_i}(t) + h \vec{a}(t)
-	\label{eq:euler}
+	&\vec{v_i}(t+h) \approx \vec{v_i}(t) + h \vec{a_i}(t)
 \end{align}
+
+Discretized version. i is the object number and j is the time step:
+
+\begin{align*}
+	&\vec{r_{i,j+1}} \approx \vec{r_{i,j}} + h \vec{v}_{i,j}
+	\\
+	&\vec{v_{i,j+1}} \approx \vec{v_{i,j}} + h \vec{a}_{i,j}
+\end{align*}
 
 The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \todo{REF TO LECTURE NOTES}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to h. 
 
@@ -159,6 +194,15 @@ We simply update the position first. We keep the old acceleration and calculate 
 	\\
 	&\vec{v_i}(t+h) \approx \vec{v_i}(t) + \frac{1}{2} h(\vec{a}(t+h) + \vec{a}(t))
 \end{align*}
+
+Discretized version. i is the object number and j is the time step:
+\begin{align*}
+	\\
+	&\vec{r}_{i,j+1} \approx \vec{r}_{i,j} + h \vec{v}_{i,j} + \frac{1}{2} h^2 a_{i,j}
+	\\
+	&\vec{v}_{i,j+1} \approx \vec{v}_{i,j} +\frac{1}{2} h(\vec{a}_{i,j+1} + \vec{a}_{i,j})
+\end{align*}
+
 
 The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \todo{REF TO LECTURE NOTES}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to $h^2$. This is one order of magnitude better, then the Forward Euler method. 
 

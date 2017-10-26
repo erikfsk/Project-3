@@ -12,6 +12,8 @@ solarsystem::solarsystem(planet* planets_input, int nr_of_planets_input)
 
 
 void solarsystem::solve_verlet(int n, double t_step){
+    mass_center();
+    remove_momentum();
     Acceleration();
     clear_file();
     for(int i = 1; i<n ; i++){
@@ -22,6 +24,7 @@ void solarsystem::solve_verlet(int n, double t_step){
         if(i % 12 == 0){
             write_to_file(0);
         }
+
     }
 }
 
@@ -117,7 +120,42 @@ void solarsystem::Acceleration_only_from_sun(){
 
 
 
+void solarsystem::mass_center(){
+    double mass_center[3]; double total_mass = 0;
+    mass_center[0] = 0;mass_center[1] = 0;mass_center[2] = 0;
 
+    for(int i = 0; i < nr_of_planets; i++){
+        for(int j = 0; j < 3; j++){
+            mass_center[j] += system_of_planets[i].position[j]*system_of_planets[i].mass;
+        }
+        total_mass += system_of_planets[i].mass;
+    }
+
+    for(int i = 0; i <3 ; i++){
+        mass_center[i] = mass_center[i]/total_mass;
+    }
+
+    for(int i = 0; i < nr_of_planets; i++){
+        for(int j = 0; j<3; j++){
+            system_of_planets[i].position[j] -= mass_center[j];
+        }
+    }
+}
+
+void solarsystem::remove_momentum(){
+    double momentum[3]; double total_mass = 0;
+    momentum[0] = 0;momentum[1] = 0;momentum[2] = 0;
+
+    for(int i = 1; i < nr_of_planets; i++){
+        for(int j = 0; j < 3; j++){
+            momentum[j] += system_of_planets[i].velocity[j]*system_of_planets[i].mass;
+        }
+    }
+
+    for(int i = 0; i <3 ; i++){
+        system_of_planets[0].velocity[i] = -momentum[i]/system_of_planets[0].mass;
+    }
+}
 
 
 

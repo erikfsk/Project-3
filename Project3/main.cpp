@@ -14,7 +14,7 @@ using namespace arma;
 
 int main (int argc, char *argv[])
 {
-    double mass_sun = 2*pow(10,32);
+    double mass_sun = 2*pow(10,30);
     double mass_mercury = 3.3*pow(10,23);
     double mass_venus = 4.9*pow(10,24);
     double mass_earth = 6*pow(10,24);
@@ -34,8 +34,20 @@ int main (int argc, char *argv[])
     planet system_of_planets[nr_planets];
 
     if(1 <= nr_planets){
-        system_of_planets[0] = planet("sun.txt",4*M_PI*M_PI,0,0,0,0,0,0);
+        system_of_planets[0] = planet("sun.txt"
+                                        ,4*M_PI*M_PI                        //Mass_ratio to sun
+                                        ,0                                  //Position x
+                                        ,0                                  //Position y
+                                        ,0                                  //Position z
+                                        ,0         //Velocity x
+                                        ,0          //Velocity y
+                                        ,0          //Velocity z
+                                        );
     }
+
+//$2458045.500000000 = A.D. 2017-Oct-19 00:00:00.0000 TDB  SUN 
+//X = 2.213296131976958E-03 Y = 5.740795718142255E-03 Z =-1.300333836064062E-04
+//VX=-5.236918819978495E-06 VY= 5.487345385589584E-06 VZ= 1.229796132639033E-07$
 
 
     if(2 <= nr_planets){
@@ -154,10 +166,5 @@ int main (int argc, char *argv[])
 
 
     solarsystem first_try = solarsystem(system_of_planets,nr_planets);
-    first_try.solve_verlet_fixed_sun(n,h);    
+    first_try.solve_verlet(n,h);    
 }
-
-
-//$2458045.500000000 = A.D. 2017-Oct-19 00:00:00.0000 TDB  SUN 
-//X = 2.213296131976958E-03 Y = 5.740795718142255E-03 Z =-1.300333836064062E-04
-//VX=-5.236918819978495E-06 VY= 5.487345385589584E-06 VZ= 1.229796132639033E-07$

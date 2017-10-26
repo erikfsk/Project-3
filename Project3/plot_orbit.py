@@ -4,7 +4,8 @@ import os
 from subprocess import Popen, PIPE
 from matplotlib.pyplot import *
 
-os.system("./solsys.exe 3 15 200000")
+
+os.system("./solsys.exe 10 300 1500000")
 output = Popen(["ls"], stdout=PIPE).communicate()[0]
 txtfiles = re.findall(".*\.txt",output,re.IGNORECASE)
 
@@ -30,5 +31,3 @@ for txtfile in txtfiles:
 legend(loc="best")
 #axis([-45,45,-45,45])
 show()
-if(True):
-	os.system("rm *.txt")
