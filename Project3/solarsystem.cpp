@@ -75,6 +75,40 @@ void solarsystem::solve_verlet_only_from_sun(int n, double t_step){
 
 
 
+void solarsystem::solve_verlet_fixed_sun_perihelion(int n, double t_step){
+    Acceleration_fixed_sun_perihelion();
+    clear_file();
+
+    double old_position[3];old_position[0] = 0; old_position[1] = 0; old_position[2]= 0;
+    double position[3];position[0] = 0; position[1] = 0; position[2]= 0;
+    double new_position[3];
+    new_position[0] = system_of_planets[1].position[0];
+    new_position[1] = system_of_planets[1].position[1];
+    new_position[2] = system_of_planets[1].position[2];
+
+    system_of_planets[0].write_to_file();
+    for(int i = 1; i<n ; i++){
+        verlet_position(t_step,1);
+        Acceleration_reset();
+        Acceleration_fixed_sun_perihelion();
+        verlet_velocity(t_step,1);
+
+        for(int i = 0; i < 3; i++){
+            old_position[i] = position[i];
+            position[i] = new_position[i];
+            new_position[i] = system_of_planets[1].position[i];
+        }
+        double r_old =sqrt(old_position[0]*old_position[0] +old_position[1]*old_position[1] +old_position[2]*old_position[2]);
+        double r = sqrt(position[0]*position[0] + position[1]*position[1] +position[2]*position[2]);
+        double r_new =sqrt(new_position[0]*new_position[0] + new_position[1]*new_position[1] + new_position[2]*new_position[2]);
+        if(r_old > r and r < r_new){
+            write_to_file(1);
+        }
+
+    }
+}
+
+
 
 
 
@@ -117,6 +151,17 @@ void solarsystem::Acceleration_only_from_sun(){
     return ; 
 }
 
+void solarsystem::Acceleration_fixed_sun_perihelion(){
+    for(int i=0; i<nr_of_planets-1; i++){
+        for(int j=i+1; j<nr_of_planets; j++){
+            if(i != 0){
+                system_of_planets[i].Acceleration_perihelion(system_of_planets[j],1);    
+            }
+            system_of_planets[j].Acceleration_perihelion(system_of_planets[i],1);
+        }
+    }
+    return ; 
+}
 
 
 

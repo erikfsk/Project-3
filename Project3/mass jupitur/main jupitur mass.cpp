@@ -14,7 +14,7 @@ using namespace arma;
 
 int main (int argc, char *argv[])
 {
-    double mass_sun = 2*pow(10,32);
+    double mass_sun = 2*pow(10,30);
     double mass_mercury = 3.3*pow(10,23);
     double mass_venus = 4.9*pow(10,24);
     double mass_earth = 6*pow(10,24);

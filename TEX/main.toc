@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{\numberline {2.4.2}Velocity-Verlet}{6}{subsubsection.2.4.2}
 \contentsline {section}{\numberline {3}Method}{7}{section.3}
 \contentsline {subsection}{\numberline {3.1}Implementation of code}{7}{subsection.3.1}
-\contentsline {section}{\numberline {4}Result}{8}{section.4}
+\contentsline {section}{\numberline {4}Result \& Discussion}{8}{section.4}
 \contentsline {subsection}{\numberline {4.1}Earth-Sun system}{8}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Stability}{8}{subsubsection.4.1.1}
 \contentsline {subsubsection}{\numberline {4.1.2}Conserved quantities}{9}{subsubsection.4.1.2}

@@ -27,23 +27,22 @@ public:
     void solve_euler_fixed_sun(int n, double t_step);
     void solve_verlet_fixed_sun(int n, double t_step);
     void solve_verlet_only_from_sun(int n, double t_step);
-
+    void solve_verlet_fixed_sun_perihelion(int n, double t_step);
 
     void Acceleration();
     void Acceleration_reset();
     void Acceleration_fixed_sun();
     void Acceleration_only_from_sun();
+    void Acceleration_fixed_sun_perihelion();
     
     void mass_center();
     void remove_momentum();
 
-    void verlet_position(double t_step, int i);
-    void verlet_velocity(double t_step, int i);
-
-
     void euler_position(double t_step, int i);
     void euler_velocity(double t_step, int i);
 
+    void verlet_position(double t_step, int i);
+    void verlet_velocity(double t_step, int i);
 
     bool clear_file();
     bool write_to_file(int i);

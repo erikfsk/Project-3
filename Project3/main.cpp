@@ -39,16 +39,11 @@ int main (int argc, char *argv[])
                                         ,0                                  //Position x
                                         ,0                                  //Position y
                                         ,0                                  //Position z
-                                        ,0         //Velocity x
-                                        ,0          //Velocity y
-                                        ,0          //Velocity z
+                                        ,0                                  //Velocity x
+                                        ,0                                  //Velocity y
+                                        ,0                                  //Velocity z
                                         );
     }
-
-//$2458045.500000000 = A.D. 2017-Oct-19 00:00:00.0000 TDB  SUN 
-//X = 2.213296131976958E-03 Y = 5.740795718142255E-03 Z =-1.300333836064062E-04
-//VX=-5.236918819978495E-06 VY= 5.487345385589584E-06 VZ= 1.229796132639033E-07$
-
 
     if(2 <= nr_planets){
         system_of_planets[1] = planet("earth.txt"                           //filename
@@ -64,7 +59,7 @@ int main (int argc, char *argv[])
 
     if(3 <= nr_planets){
         system_of_planets[2] = planet("jupitur.txt"                         //filename
-                                        ,4*M_PI*M_PI*mass_jupitur/mass_sun  //Mass_ratio to sun
+                                        ,atoi(argv[4])*4*M_PI*M_PI*mass_jupitur/mass_sun  //Mass_ratio to sun
                                         ,-4.576765120608809E+00             //Position x
                                         ,-2.933101794720733E+00             //Position y
                                         ,1.145345160230888E-01              //Position z
@@ -166,5 +161,5 @@ int main (int argc, char *argv[])
 
 
     solarsystem first_try = solarsystem(system_of_planets,nr_planets);
-    first_try.solve_verlet(n,h);    
+    first_try.solve_verlet_fixed_sun(n,h);    
 }

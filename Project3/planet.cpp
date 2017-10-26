@@ -72,6 +72,38 @@ void planet::Acceleration(planet otherPlanet, double Gconst)
     acceleration[2] = acceleration[2] + a*(this->position[2]-otherPlanet.position[2]);
 }
 
+
+
+
+
+
+double planet::GravitationalForce_perihelion(planet otherPlanet,double Gconst)
+{
+    double r = this->distance(otherPlanet);
+    double c = 63241;
+    double l_x = position[1]*velocity[2] - position[2]*velocity[1];
+    double l_y = -(position[0]*velocity[2] - position[2]*velocity[0]);
+    double l_z = position[1]*velocity[0] - position[0]*velocity[1];
+    double l = sqrt(l_x*l_x + l_y*l_y + l_z*l_z); 
+    if(r!=0) return (Gconst*this->mass*otherPlanet.mass/(r*r))*( 1+( (3*l*l)/(r*r*c*c) ) );
+    else return 0;
+}
+
+void planet::Acceleration_perihelion(planet otherPlanet, double Gconst)
+{
+    double r = this->distance(otherPlanet);
+    double a = - this->GravitationalForce_perihelion(otherPlanet,Gconst)/(this->mass*r);
+    acceleration[0] = acceleration[0] + a*(this->position[0]-otherPlanet.position[0]);
+    acceleration[1] = acceleration[1] + a*(this->position[1]-otherPlanet.position[1]);
+    acceleration[2] = acceleration[2] + a*(this->position[2]-otherPlanet.position[2]);
+}
+
+
+
+
+
+
+
 void planet::Acceleration_reset(){
     oldacceleration[0] = acceleration[0];
     oldacceleration[1] = acceleration[1];
@@ -131,7 +163,7 @@ bool planet::write_to_file(){
         cout << "Problem opening file." << endl;
         exit(1);
     }
-    outFile << this->position[0] << " " << this->position[1] << " " << this->position[2] << endl;
+    outFile << setprecision(16) << this->position[0] << " " << this->position[1] << " " << this->position[2] << endl;
     outFile.close();
     return true;
 }
