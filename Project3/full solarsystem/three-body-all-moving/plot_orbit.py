@@ -30,7 +30,6 @@ for txtfile in txtfiles:
 	#plot(data["t"],data["x"],label="x")
 
 
-title("Full solar system for 300 years with n=3e6")
 names = [	"Earth",
 			"Jupitur",
 			"Sun"]
@@ -39,5 +38,4 @@ grid("on")
 xlabel("X [au]")
 ylabel("Y [au]")
 show()
-axis([-45,50,-45,45])
-show()
+#axis([-45,50,-45,45])

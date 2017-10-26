@@ -13,7 +13,9 @@ using namespace arma;
 
 
 int main (int argc, char *argv[])
-{
+{   
+    //setting all the masses
+    //need it for mass ratio later
     double mass_sun = 2*pow(10,30);
     double mass_mercury = 3.3*pow(10,23);
     double mass_venus = 4.9*pow(10,24);
@@ -26,13 +28,22 @@ int main (int argc, char *argv[])
     double mass_pluto = 1.31*pow(10,22);
 
 
+    //setting up the run
     double t_start = 0; int t_end = atoi(argv[2]); int n = atoi(argv[3]);
     double h = (t_end-t_start)/(n-1);
 
 
+    //making the input for the solarsystem class
     int nr_planets = atoi(argv[1]);
     planet system_of_planets[nr_planets];
 
+
+    //JUMP TO THE BOTTOM OF THE PROGRAM FOR SETTING THE SOLVER!!!
+    //JUMP TO THE BOTTOM OF THE PROGRAM FOR SETTING THE SOLVER!!!
+    //JUMP TO THE BOTTOM OF THE PROGRAM FOR SETTING THE SOLVER!!!
+
+
+    //this is just adding planets to the list
     if(1 <= nr_planets){
         system_of_planets[0] = planet("sun.txt"
                                         ,4*M_PI*M_PI                        //Mass_ratio to sun
@@ -59,7 +70,7 @@ int main (int argc, char *argv[])
 
     if(3 <= nr_planets){
         system_of_planets[2] = planet("jupitur.txt"                         //filename
-                                        ,atoi(argv[4])*4*M_PI*M_PI*mass_jupitur/mass_sun  //Mass_ratio to sun
+                                        ,4*M_PI*M_PI*mass_jupitur/mass_sun  //Mass_ratio to sun
                                         ,-4.576765120608809E+00             //Position x
                                         ,-2.933101794720733E+00             //Position y
                                         ,1.145345160230888E-01              //Position z
@@ -161,5 +172,5 @@ int main (int argc, char *argv[])
 
 
     solarsystem first_try = solarsystem(system_of_planets,nr_planets);
-    first_try.solve_verlet_fixed_sun(n,h);    
+    first_try.solve_verlet(n,h);    
 }

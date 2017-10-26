@@ -31,19 +31,24 @@ public:
     // Functions
     double distance(planet otherPlanet);
     
+    //Newtons accelrations methods. 
     void Acceleration_reset();
     void Acceleration(planet otherPlanet, double Gconst);
     double GravitationalForce(planet otherPlanet, double Gconst);
 
+    //accelration for perihelion assignment
     void Acceleration_perihelion(planet otherPlanet, double Gconst);
     double GravitationalForce_perihelion(planet otherPlanet, double Gconst);
 
+    //specific to verlet-velocity method
     void verlet_velocity(double t_step);
     void verlet_position(double t_step);
 
+    //specific to forward euler method
     void euler_velocity(double t_step);
     void euler_position(double t_step);
 
+    //general methods
     bool clear_file();
     bool write_to_file();
     double KineticEnergy();

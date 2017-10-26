@@ -22,8 +22,7 @@
 \contentsline {subsubsection}{\numberline {4.2.2}Varying mass for jupitur}{12}{subsubsection.4.2.2}
 \contentsline {subsection}{\numberline {4.3}Solar system}{13}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Three planets and all moving}{13}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Solar system all moving}{13}{subsubsection.4.3.2}
-\contentsline {subsection}{\numberline {4.4}The perihelion precession of Mercury}{13}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}missing this part}{13}{subsubsection.4.4.1}
-\contentsline {section}{\numberline {5}Conclusion}{13}{section.5}
-\contentsline {section}{\numberline {6}Appendix}{14}{section.6}
+\contentsline {subsubsection}{\numberline {4.3.2}Solar system all moving}{14}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}The perihelion precession of Mercury}{14}{subsection.4.4}
+\contentsline {section}{\numberline {5}Conclusion}{15}{section.5}
+\contentsline {section}{\numberline {6}Appendix}{16}{section.6}
