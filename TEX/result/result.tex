@@ -40,26 +40,20 @@
 
 \begin{center}
 \label{table:euler-verlet-time}
-\captionof{table}{Time table for the different algorithms. The algorithms use nearly the same time. This is not a shocker since the number of FLOPs for the algorithms are similar. Time grows very linear as expected from section \ref{flops}. Disclaimer: this is only the result from one test, but several was done. Both algorithms were very close and it seem to be random which is fastest.
+\captionof{table}{Time table for the different algorithms. The algorithms use nearly the same time. This is not a shocker since the number of FLOPs for the algorithms are similar, see section (\ref{sec:flops}). Disclaimer: this is only the result from one test, but several was done. Both algorithms were very close and it seem to be random which is fastest.
 \\}
-\begin{tabular}{|c|c|c|c|c|c|}
+\begin{tabular}{c c c c c}
+    \hline 
     \hline 
     n & Forward-Euler & Verlet-Velocity &  fastest & $\frac{slowest}{fastest}$\\ 
     \hline
     10 & 0.000136 & 0.000148 & Euler &   1.08823529412   \\ 
-    \hline 
     100 & 0.000208 & 0.000179 & Verlet &   1.16201117318   \\ 
-    \hline 
     1000 & 0.000392 & 0.000389 & Verlet &  1.00771208226   \\ 
-    \hline
     10000 & 0.002427 & 0.002426 & Verlet &   1.00041220115  \\ 
-    \hline
     100000 & 0.022931 & 0.022293 & Verlet &   1.02861884897   \\ 
-    \hline
     1000000 & 0.167022 & 0.175944 & Euler &   1.05341811258  \\ 
-    \hline
     10000000 & 1.58721 & 1.52666 & Verlet &   1.03966174525  \\ 
-    \hline
     100000000 & 15.1786 & 15.1176 & Verlet &   1.00403503202  \\ 
     \hline
 \end{tabular}

@@ -3,9 +3,9 @@
 // 1 FLOP * 3 directions
 dx = x1 - x2
 // 3 FLOPs
-double r = sqrt(dx*dx + dy*dy + dz*dz)
+r = sqrt(dx*dx + dy*dy + dz*dz)
 // 7 FLOPs
-double a = - (Gconst*m*M/(r*r)) / (m*r)
+a = - (Gconst*m*M/(r*r)) / (m*r)
 // 2 FLOPs * 3 directions
 a = a + a*(x1-x2);																	
 //TOTAL FLOPs = 19 FLOPs 
@@ -34,3 +34,12 @@ x = x + t_step*Vx + (0.5*t_step*t_step*a);
 Vx = Vx + (0.5*t_step*(Ax+Ax_old));
 //TOTAL FLOPs = 12 FLOPs
 \end{lstlisting}
+
+\pagebreak
+
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{appendix/bilder/workflow.png}
+		\caption{Our retarded workflow... Next time maybe it will be better?}
+		\label{fig:ab}
+\end{figure}

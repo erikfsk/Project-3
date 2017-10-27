@@ -1,0 +1,78 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nty}{nty}
+    \entry{compphys}{booklet}{}
+      \name{author}{1}{}{%
+        {{hash=f1f1ee5e424a0bb746b54acd9e6851cf}{Hjorth-Jensen}{H\bibinithyphendelim J\bibinitperiod}{Morten}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f1f1ee5e424a0bb746b54acd9e6851cf}
+      \strng{fullhash}{f1f1ee5e424a0bb746b54acd9e6851cf}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Lecture notes}
+      \field{title}{Computational Physics}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://github.com/CompPhysics/ComputationalPhysics/blob/master/doc/Lectures/lectures2015.pdf
+      \endverb
+    \endentry
+    \entry{project3}{booklet}{}
+      \name{author}{1}{}{%
+        {{hash=f1f1ee5e424a0bb746b54acd9e6851cf}{Hjorth-Jensen}{H\bibinithyphendelim J\bibinitperiod}{Morten}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f1f1ee5e424a0bb746b54acd9e6851cf}
+      \strng{fullhash}{f1f1ee5e424a0bb746b54acd9e6851cf}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Project-3}
+      \field{title}{Computational Physics}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/CompPhysics/ComputationalPhysics/blob/master/doc/Projects/2017/Project3/pdf/Project3.pdf
+      \endverb
+    \endentry
+    \entry{uniphys}{book}{}
+      \name{author}{3}{}{%
+        {{hash=bec13943ce1580f5d82b3edc724a14a7}{Young}{Y\bibinitperiod}{Hugh\bibnamedelima D.}{H\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=602e39cd0bc8e1c3856442ee5273d099}{Freedman}{F\bibinitperiod}{Roger\bibnamedelima A.}{R\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=3288ccd7c0b3ea4f5fe5245859284a95}{Ford}{F\bibinitperiod}{A.\bibnamedelimi Lewis}{A\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{17fac4b93def5884a77f5daaec00d568}
+      \strng{fullhash}{17fac4b93def5884a77f5daaec00d568}
+      \field{sortinit}{Y}
+      \field{sortinithash}{3cbc1e3d286284cedb5e5218a3248f94}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0321696867}
+      \field{title}{Sears and Zemansky's University Physics with Modern Physics, 13th Edition}
+      \field{year}{2011}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

@@ -1,6 +1,16 @@
+%\bibliography{kilder.bib}
+
+
+
+
+
+
+
+
+
 \subsection{Gravitation}
 
-We will simulate the solar system with only the gravitational force affecting the planets.  Newton's gravitational law is stated in equation (\ref{eq:newton}). Where G is the gravitational constant ($6.67 \cdot 10^{-11} \rm{Nm^2/s^2}$), r is the distance between the planets, m is the mass of the object and M is the mass of the other object.
+We will simulate the solar system with only the gravitational force affecting the planets.  Newton's gravitational law is stated in equation (\ref{eq:newton})\cite{uniphys}. Where G is the gravitational constant ($6.67 \cdot 10^{-11} \rm{Nm^2/s^2}$), r is the distance between the planets, m is the mass of the object and M is the mass of the other object.
 
 \begin{align}
 	\vec{F_G}  =\frac{GmM}{\vec{|r|}^3}\vec{r}
@@ -51,6 +61,17 @@ We can use Newton's second law to determine the accelration of the planet. Newto
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 \subsection{Units}\label{sec:units}
 As a famous person once said, \"If you use seconds and meters you will not finish within the deadline\". I think our professor, Morten Hjorth-Jensen, is on to something. Seconds and meters are impractical in this project. Therefore we use more suitable units. The distance between the earth and sun, 149 597 870 691 meter, is defined as one astronomical unit (au). For time one year seems reasonable. 
 These are the units that will be used in this project. 
@@ -82,6 +103,13 @@ Applying this to equation (\ref{eq:acceleration_all}), we get:
 	(1 - \delta_{k,i}) \rm{au^3/year^2}
 	\label{eq:acceleration_all_au}
 \end{align}
+
+Note that if you pick $M_\odot = 4 \pi$, then you get G = 1 and a planet's mass become $m_i = 4\pi \frac{m_{i_{kg}}} {M_{\odot_{kg}}}$
+
+
+
+
+
 
 
 \subsubsection{Escape velocity}\label{sec:escape-velocity}
@@ -119,7 +147,13 @@ Let's solve it:
 
 
 
-\subsection{prehelion}\label{sec:perihelion}
+
+
+
+
+
+
+\subsection{The perihelion precession of mercury}\label{sec:perihelion}
 
 
 \todo{since this is not implemented in the code yet nothing is writen}
@@ -144,6 +178,18 @@ Let's solve it:
 Equation (\ref{eq:acceleration_all_au}) initial conditions for velocity and position determines the orbit of the planets. 
 These equations are for x,y,z direction and when writen out you get a coupled set of differential equations. This set is near impossible to solve analytically. It might be impossible. We will use numerical methods to solve this set. More specifically we will use the Forward Euler method and the Velocity-Verlet method. A given $t_i$ is equal to $t_0 + ih$, where $h = (t_{0} + t_{n})/n $.
 
+
+
+
+
+
+
+
+
+
+
+
+
 \subsubsection{Forward Euler}
 
 Both method use a Taylor polynomial approximation to solve the set of differential equation. The Forward Euler use the first order Taylor polynomial. With $r'(t) = v(t)$ and $v'(t) = a(t)$ the Forward Euler method result in: 
@@ -162,7 +208,19 @@ Discretized version. i is the object number and j is the time step:
 	&\vec{v_{i,j+1}} \approx \vec{v_{i,j}} + h \vec{a}_{i,j}
 \end{align*}
 
-The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \cite{compphys}\todo{FIX REF}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to h. 
+The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \cite{compphys}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to h. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 \subsubsection{Velocity-Verlet}
 
@@ -198,7 +256,7 @@ Discretized version. i is the object number and j is the time step:
 \end{align*}
 
 
-The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \cite{compphys}\todo{FIX REF}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to $h^2$. This is one order of magnitude better, then the Forward Euler method. 
+The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \cite{compphys}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to $h^2$. This is one order of magnitude better, then the Forward Euler method. 
 
 
 

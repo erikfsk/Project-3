@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.15)  27 OCT 2017 01:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.15)  27 OCT 2017 11:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2143,6 +2143,11 @@ Variant \str_if_eq:VnTF already defined; not changing it on line 57
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2015/04/19 v3.0 programmable bibliographies (PK/JW/AB)
 
+
+Package biblatex Warning: No "backend" specified, using Biber backend.
+(biblatex)                To use BibTeX, load biblatex with 
+(biblatex)                the "backend=bibtex" option.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex2.sty
 Package: biblatex2 2015/04/19 v3.0 programmable bibliographies (biber) (PK/JW/A
 B)
@@ -2214,8 +2219,6 @@ Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/blx-dm.def)
-Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count306
@@ -2309,11 +2312,6 @@ File: biblatex.def
 \c@biburllcpenalty=\count377
 \c@smartand=\count378
 )
-Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
-Package biblatex Info: ... file 'numeric-comp.bbx' found.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
-File: numeric-comp.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
@@ -2326,14 +2324,12 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count379
 \c@bbx:relatedtotal=\count380
-)))
-Package biblatex Info: Trying to load citation style 'numeric-comp'...
-Package biblatex Info: ... file 'numeric-comp.cbx' found.
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
-File: numeric-comp.cbx 2015/04/19 v3.0 biblatex citation style (PK/JW/AB)
-\c@cbx@tempcnta=\count381
-\c@cbx@tempcntb=\count382
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2015/04/19 v3.0 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -2366,30 +2362,30 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 Variant \tl_if_blank:VTF already defined; not changing it on line 50
 \l__siunitx_tmp_box=\box56
 \l__siunitx_tmp_dim=\dimen230
-\l__siunitx_tmp_int=\count383
+\l__siunitx_tmp_int=\count381
 Variant \prop_get:NVNT already defined; not changing it on line 380
 Variant \prop_get:NVNF already defined; not changing it on line 381
 Variant \prop_get:NVNTF already defined; not changing it on line 382
-\l__siunitx_number_mantissa_length_int=\count384
-\l__siunitx_number_uncert_length_int=\count385
-\l__siunitx_round_int=\count386
-\l__siunitx_process_decimal_int=\count387
-\l__siunitx_process_uncertainty_int=\count388
-\l__siunitx_process_fixed_int=\count389
-\l__siunitx_process_integer_min_int=\count390
-\l__siunitx_process_precision_int=\count391
-\l__siunitx_group_min_int=\count392
+\l__siunitx_number_mantissa_length_int=\count382
+\l__siunitx_number_uncert_length_int=\count383
+\l__siunitx_round_int=\count384
+\l__siunitx_process_decimal_int=\count385
+\l__siunitx_process_uncertainty_int=\count386
+\l__siunitx_process_fixed_int=\count387
+\l__siunitx_process_integer_min_int=\count388
+\l__siunitx_process_precision_int=\count389
+\l__siunitx_group_min_int=\count390
 \l__siunitx_angle_marker_box=\box57
 \l__siunitx_angle_unit_box=\box58
 \l__siunitx_angle_marker_dim=\dimen231
 \l__siunitx_angle_unit_dim=\dimen232
-\l__siunitx_unit_int=\count393
-\l__siunitx_unit_denominator_int=\count394
-\l__siunitx_unit_numerator_int=\count395
-\l__siunitx_unit_prefix_int=\count396
-\l__siunitx_unit_prefix_base_int=\count397
-\l__siunitx_unit_prefix_gram_int=\count398
-\l__siunitx_number_product_int=\count399
+\l__siunitx_unit_int=\count391
+\l__siunitx_unit_denominator_int=\count392
+\l__siunitx_unit_numerator_int=\count393
+\l__siunitx_unit_prefix_int=\count394
+\l__siunitx_unit_prefix_base_int=\count395
+\l__siunitx_unit_prefix_gram_int=\count396
+\l__siunitx_number_product_int=\count397
 \c__siunitx_one_fill_skip=\skip91
 \l__siunitx_table_unit_align_skip=\skip92
 \l__siunitx_table_exponent_dim=\dimen233
@@ -2544,33 +2540,33 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks40
 \XKV@tempa@toks=\toks41
 )
-\XKV@depth=\count400
+\XKV@depth=\count398
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
-\c@@todonotes@numberoftodonotes=\count401
+\c@@todonotes@numberoftodonotes=\count399
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count402
+\lst@mode=\count400
 \lst@gtempboxa=\box63
 \lst@token=\toks42
-\lst@length=\count403
+\lst@length=\count401
 \lst@currlwidth=\dimen264
-\lst@column=\count404
-\lst@pos=\count405
+\lst@column=\count402
+\lst@pos=\count403
 \lst@lostspace=\dimen265
 \lst@width=\dimen266
-\lst@newlines=\count406
-\lst@lineno=\count407
+\lst@newlines=\count404
+\lst@lineno=\count405
 \lst@maxwidth=\dimen267
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count408
-\lst@skipnumbers=\count409
+\c@lstnumber=\count406
+\lst@skipnumbers=\count407
 \lst@framebox=\box64
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
@@ -2593,8 +2589,8 @@ File: norwegian.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count410
-\@quotereset=\count411
+\@quotelevel=\count408
+\@quotereset=\count409
 (./main.aux)
 \openout1 = `main.aux'.
 
@@ -2616,16 +2612,16 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count412
+\scratchcounter=\count410
 \scratchdimen=\dimen268
 \scratchbox=\box65
-\nofMPsegments=\count413
-\nofMParguments=\count414
+\nofMPsegments=\count411
+\nofMParguments=\count412
 \everyMPshowfont=\toks43
-\MPscratchCnt=\count415
+\MPscratchCnt=\count413
 \MPscratchDim=\dimen269
-\MPnumerator=\count416
-\makeMPintoPDFobject=\count417
+\MPnumerator=\count414
+\makeMPintoPDFobject=\count415
 \everyMPtoPDFconversion=\toks44
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -2656,7 +2652,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count418
+\c@section@level=\count416
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -2716,8 +2712,8 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-No file main.bbl.
+Package biblatex Info: ... file 'main.bbl' found.
+(./main.bbl)
 Package biblatex Info: Reference section=0 on input line 3.
 Package biblatex Info: Reference segment=0 on input line 3.
 
@@ -2728,8 +2724,8 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/local/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2015/01/21 v2.6e siunitx: Abbreviated units
 )
-\c@lstlisting=\count419
-\c__siunitx_mathsf_int=\count420
+\c@lstlisting=\count417
+\c__siunitx_mathsf_int=\count418
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -2739,9 +2735,9 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\c__siunitx_mathtt_int=\count421
+\c__siunitx_mathtt_int=\count419
 
-<mnfrontpage-images/mnfrontpage-bg-web-3.jpg, id=114, 639.38875pt x 886.31125pt
+<mnfrontpage-images/mnfrontpage-bg-web-3.jpg, id=115, 639.38875pt x 886.31125pt
 >
 File: mnfrontpage-images/mnfrontpage-bg-web-3.jpg Graphic file (type jpg)
  <use mnfrontpage-images/mnfrontpage-bg-web-3.jpg>
@@ -2749,7 +2745,7 @@ Package pdftex.def Info: mnfrontpage-images/mnfrontpage-bg-web-3.jpg used on in
 put line 4.
 (pdftex.def)             Requested size: 639.38718pt x 886.30908pt.
 
-<mnfrontpage-images/mnfrontpage-apollon.pdf, id=115, 142.5325pt x 142.5325pt>
+<mnfrontpage-images/mnfrontpage-apollon.pdf, id=116, 142.5325pt x 142.5325pt>
 File: mnfrontpage-images/mnfrontpage-apollon.pdf Graphic file (type pdf)
 
 <use mnfrontpage-images/mnfrontpage-apollon.pdf>
@@ -2757,7 +2753,7 @@ Package pdftex.def Info: mnfrontpage-images/mnfrontpage-apollon.pdf used on inp
 ut line 4.
 (pdftex.def)             Requested size: 76.82243pt x 76.82285pt.
 
-<mnfrontpage-images/mnfrontpage-logo-fys-eng.pdf, id=116, 536.0025pt x 74.2775p
+<mnfrontpage-images/mnfrontpage-logo-fys-eng.pdf, id=117, 536.0025pt x 74.2775p
 t>
 File: mnfrontpage-images/mnfrontpage-logo-fys-eng.pdf Graphic file (type pdf)
  <use mnfrontpage-images/mnfrontpage-logo-fys-eng.pdf>
@@ -2792,7 +2788,7 @@ less on input line 14.
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- (./abstract/abstract.tex)
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2803,11 +2799,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 \section
-             {Introduction} [1] (./intro/intro.tex
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 4.
-)
+l.25 \section
+             *{Abstract}%1 [1] (./abstract/abstract.tex) (./intro/intro.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 1--31
 
  []
@@ -2821,18 +2814,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--31
 Underfull \hbox (badness 10000) in paragraph at lines 1--31
 
  []
-
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-
-LaTeX Warning: Marginpar on page 2 moved.
 
 (./theory/theory.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--14
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2840,7 +2823,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 55--60
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--81
 
  []
 
@@ -2851,6 +2839,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 159.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2859,43 +2850,36 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 
-LaTeX Warning: Citation 'compphys' on page 5 undefined on input line 165.
-
-
-LaTeX Warning: Citation 'compphys' on page 5 undefined on input line 201.
-
-) (./method/method.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--20
-
- []
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
+[5]) (./method/method.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--20
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2903,19 +2887,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
 
  []
 
 ) (./result/result.tex
-<result/bilder/earth-sun.pdf, id=249, 578.16pt x 433.62pt>
+<result/bilder/earth-sun.pdf, id=266, 578.16pt x 433.62pt>
 File: result/bilder/earth-sun.pdf Graphic file (type pdf)
 
 <use result/bilder/earth-sun.pdf>
 Package pdftex.def Info: result/bilder/earth-sun.pdf used on input line 27.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-<result/bilder/earth-sun-error.pdf, id=250, 578.16pt x 433.62pt>
+<result/bilder/earth-sun-error.pdf, id=267, 578.16pt x 433.62pt>
 File: result/bilder/earth-sun-error.pdf Graphic file (type pdf)
 
 <use result/bilder/earth-sun-error.pdf>
@@ -2939,29 +2923,23 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 44.
 See the caption package documentation for explanation.
 
-
-LaTeX Warning: Reference `flops' on page 8 undefined on input line 44.
-
-
-LaTeX Warning: Reference `flops' on page 8 undefined on input line 44.
-
-<result/bilder/kin-pot-euler.pdf, id=259, 578.16pt x 433.62pt>
+<result/bilder/kin-pot-euler.pdf, id=279, 578.16pt x 433.62pt>
 File: result/bilder/kin-pot-euler.pdf Graphic file (type pdf)
 
 <use result/bilder/kin-pot-euler.pdf>
-Package pdftex.def Info: result/bilder/kin-pot-euler.pdf used on input line 89.
+Package pdftex.def Info: result/bilder/kin-pot-euler.pdf used on input line 83.
 
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-<result/bilder/kin-pot-verlet.pdf, id=260, 578.16pt x 433.62pt>
+<result/bilder/kin-pot-verlet.pdf, id=280, 578.16pt x 433.62pt>
 File: result/bilder/kin-pot-verlet.pdf Graphic file (type pdf)
 
 <use result/bilder/kin-pot-verlet.pdf>
-Package pdftex.def Info: result/bilder/kin-pot-verlet.pdf used on input line 95
+Package pdftex.def Info: result/bilder/kin-pot-verlet.pdf used on input line 89
 .
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 87--98
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 81--92
  []$[]$  $[]$ 
  []
 
@@ -2975,43 +2953,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex (file ./result/bilder/earth-sun-error.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
->] <result/bilder/momentum-euler.pdf, id=333, 578.16pt x 433.62pt>
+>] <result/bilder/momentum-euler.pdf, id=353, 578.16pt x 433.62pt>
 File: result/bilder/momentum-euler.pdf Graphic file (type pdf)
 
 <use result/bilder/momentum-euler.pdf>
-Package pdftex.def Info: result/bilder/momentum-euler.pdf used on input line 11
-0.
+Package pdftex.def Info: result/bilder/momentum-euler.pdf used on input line 10
+4.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-<result/bilder/momentum-verlet.pdf, id=334, 578.16pt x 433.62pt>
+<result/bilder/momentum-verlet.pdf, id=354, 578.16pt x 433.62pt>
 File: result/bilder/momentum-verlet.pdf Graphic file (type pdf)
 
 <use result/bilder/momentum-verlet.pdf>
 Package pdftex.def Info: result/bilder/momentum-verlet.pdf used on input line 1
-16.
+10.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 108--120
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 102--114
  []$[]$  $[]$ 
  []
 
-<result/bilder/ang-momentum-euler.pdf, id=335, 578.16pt x 433.62pt>
+<result/bilder/ang-momentum-euler.pdf, id=355, 578.16pt x 433.62pt>
 File: result/bilder/ang-momentum-euler.pdf Graphic file (type pdf)
 
 <use result/bilder/ang-momentum-euler.pdf>
 Package pdftex.def Info: result/bilder/ang-momentum-euler.pdf used on input lin
-e 132.
+e 126.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-<result/bilder/ang-momentum-verlet.pdf, id=336, 578.16pt x 433.62pt>
+<result/bilder/ang-momentum-verlet.pdf, id=356, 578.16pt x 433.62pt>
 File: result/bilder/ang-momentum-verlet.pdf Graphic file (type pdf)
 
 <use result/bilder/ang-momentum-verlet.pdf>
 Package pdftex.def Info: result/bilder/ang-momentum-verlet.pdf used on input li
-ne 138.
+ne 132.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 130--142
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 124--136
  []$[]$  $[]$ 
  []
 
@@ -3033,23 +3011,23 @@ on: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./result/bilder/momentum-verlet.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
->] <result/bilder/escape-velocity.pdf, id=553, 666.69077pt x 540.21826pt>
+>] <result/bilder/escape-velocity.pdf, id=574, 666.69077pt x 540.21826pt>
 File: result/bilder/escape-velocity.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity.pdf>
 Package pdftex.def Info: result/bilder/escape-velocity.pdf used on input line 1
-69.
+63.
 (pdftex.def)             Requested size: 226.48395pt x 183.51515pt.
 
-<result/bilder/escape-velocity-r25.pdf, id=554, 578.16pt x 433.62pt>
+<result/bilder/escape-velocity-r25.pdf, id=575, 578.16pt x 433.62pt>
 File: result/bilder/escape-velocity-r25.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity-r25.pdf>
 Package pdftex.def Info: result/bilder/escape-velocity-r25.pdf used on input li
-ne 175.
+ne 169.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 167--178
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 161--172
  []$[]$  $[]$ 
  []
 
@@ -3064,23 +3042,23 @@ et.pdf
 
 pdfTeX warning: pdflatex (file ./result/bilder/ang-momentum-verlet.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
->] <result/bilder/escape-velocity-r275.pdf, id=667, 578.16pt x 433.62pt>
+>] <result/bilder/escape-velocity-r275.pdf, id=689, 578.16pt x 433.62pt>
 File: result/bilder/escape-velocity-r275.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity-r275.pdf>
 Package pdftex.def Info: result/bilder/escape-velocity-r275.pdf used on input l
-ine 188.
+ine 182.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-<result/bilder/escape-velocity-r3.pdf, id=668, 578.16pt x 433.62pt>
+<result/bilder/escape-velocity-r3.pdf, id=690, 578.16pt x 433.62pt>
 File: result/bilder/escape-velocity-r3.pdf Graphic file (type pdf)
 
 <use result/bilder/escape-velocity-r3.pdf>
 Package pdftex.def Info: result/bilder/escape-velocity-r3.pdf used on input lin
-e 194.
+e 188.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 186--197
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 180--191
  []$[]$  $[]$ 
  []
 
@@ -3103,11 +3081,11 @@ nclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./result/bilder/escape-velocity-r3.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
->] <result/bilder/jupitur-mass.pdf, id=876, 661.2705pt x 436.33014pt>
+>] <result/bilder/jupitur-mass.pdf, id=899, 661.2705pt x 436.33014pt>
 File: result/bilder/jupitur-mass.pdf Graphic file (type pdf)
 
 <use result/bilder/jupitur-mass.pdf>
-Package pdftex.def Info: result/bilder/jupitur-mass.pdf used on input line 231.
+Package pdftex.def Info: result/bilder/jupitur-mass.pdf used on input line 225.
 
 (pdftex.def)             Requested size: 452.9679pt x 298.89099pt.
 
@@ -3118,43 +3096,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12 <./result/bilder/jupitur-mass.pdf>]
-<result/bilder/jupitur-mass-three.pdf, id=915, 781.41937pt x 504.98663pt>
+<result/bilder/jupitur-mass-three.pdf, id=939, 781.41937pt x 504.98663pt>
 File: result/bilder/jupitur-mass-three.pdf Graphic file (type pdf)
 
 <use result/bilder/jupitur-mass-three.pdf>
 Package pdftex.def Info: result/bilder/jupitur-mass-three.pdf used on input lin
-e 245.
+e 239.
 (pdftex.def)             Requested size: 226.48395pt x 146.36531pt.
 
-<result/bilder/jupitur-mass-two.pdf, id=916, 792.25986pt x 476.07861pt>
+<result/bilder/jupitur-mass-two.pdf, id=940, 792.25986pt x 476.07861pt>
 File: result/bilder/jupitur-mass-two.pdf Graphic file (type pdf)
 
 <use result/bilder/jupitur-mass-two.pdf>
 Package pdftex.def Info: result/bilder/jupitur-mass-two.pdf used on input line 
-251.
+245.
 (pdftex.def)             Requested size: 226.48395pt x 136.09787pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 243--254
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 237--248
  []$[]$  $[]$ 
  []
 
-<result/bilder/all-moving-jupitur.png, id=918, 671.6292pt x 522.2712pt>
+<result/bilder/all-moving-jupitur.png, id=942, 671.6292pt x 522.2712pt>
 File: result/bilder/all-moving-jupitur.png Graphic file (type png)
 
 <use result/bilder/all-moving-jupitur.png>
 Package pdftex.def Info: result/bilder/all-moving-jupitur.png used on input lin
-e 278.
+e 272.
 (pdftex.def)             Requested size: 226.48395pt x 176.11148pt.
 
-<result/bilder/all-moving-jupitur-mass-center.png, id=920, 671.6292pt x 522.271
+<result/bilder/all-moving-jupitur-mass-center.png, id=944, 671.6292pt x 522.271
 2pt>
 File: result/bilder/all-moving-jupitur-mass-center.png Graphic file (type png)
  <use result/bilder/all-moving-jupitur-mass-center.png>
 Package pdftex.def Info: result/bilder/all-moving-jupitur-mass-center.png used 
-on input line 284.
+on input line 278.
 (pdftex.def)             Requested size: 226.48395pt x 176.11148pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 276--287
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 270--281
  []$[]$  $[]$ 
  []
 
@@ -3169,31 +3147,31 @@ pdf
 
 pdfTeX warning: pdflatex (file ./result/bilder/jupitur-mass-two.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
->] <result/bilder/all-moving-solarsystem.png, id=1012, 778.107pt x 486.1362pt>
+>] <result/bilder/all-moving-solarsystem.png, id=1037, 778.107pt x 486.1362pt>
 File: result/bilder/all-moving-solarsystem.png Graphic file (type png)
 
 <use result/bilder/all-moving-solarsystem.png>
 Package pdftex.def Info: result/bilder/all-moving-solarsystem.png used on input
- line 297.
+ line 291.
 (pdftex.def)             Requested size: 226.48395pt x 141.49513pt.
 
-<result/bilder/all-moving-solarsystem-zoom.png, id=1013, 578.16pt x 433.62pt>
+<result/bilder/all-moving-solarsystem-zoom.png, id=1038, 578.16pt x 433.62pt>
 File: result/bilder/all-moving-solarsystem-zoom.png Graphic file (type png)
 
 <use result/bilder/all-moving-solarsystem-zoom.png>
 Package pdftex.def Info: result/bilder/all-moving-solarsystem-zoom.png used on 
-input line 303.
+input line 297.
 (pdftex.def)             Requested size: 226.48395pt x 169.85878pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 295--306
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 289--300
  []$[]$  $[]$ 
  []
 
-<result/bilder/perihelion.png, id=1016, 578.16pt x 433.62pt>
+<result/bilder/perihelion.png, id=1041, 578.16pt x 433.62pt>
 File: result/bilder/perihelion.png Graphic file (type png)
 
 <use result/bilder/perihelion.png>
-Package pdftex.def Info: result/bilder/perihelion.png used on input line 319.
+Package pdftex.def Info: result/bilder/perihelion.png used on input line 313.
 (pdftex.def)             Requested size: 452.9679pt x 339.72418pt.
 
 
@@ -3204,18 +3182,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [14 <./result/bilder/all-moving-jupitur.png> <./result/bilder/all-moving-jupitu
 r-mass-center.png> <./result/bilder/all-moving-solarsystem.png> <./result/bilde
-r/all-moving-solarsystem-zoom.png>]) (./conclusion/conclusion.tex)
+r/all-moving-solarsystem-zoom.png>]) (./conclusion/conclusion.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./result/bilder/perihelion.png>]
+[15 <./result/bilder/perihelion.png>])
 
-LaTeX Warning: Empty bibliography on input line 60.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-(./appendix/appendix.tex
+[16]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17] (./appendix/appendix.tex
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
@@ -3224,8 +3212,20 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-))
+)
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18] <appendix/bilder/workflow.png, id=1128, 433.62pt x 361.35pt>
+File: appendix/bilder/workflow.png Graphic file (type png)
+
+<use appendix/bilder/workflow.png>
+Package pdftex.def Info: appendix/bilder/workflow.png used on input line 42.
+(pdftex.def)             Requested size: 317.07614pt x 264.24095pt.
+) 
 AED: lastpage setting LastPage
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3233,58 +3233,52 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
+[19 <./appendix/bilder/workflow.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AA35206AF553078D9E9BBB9626601435;1770.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: A13D09ADFB6208542A4FB1EAEBAE789F;1797.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 43180 strings out of 493089
- 898846 string characters out of 6134842
- 1383008 words of memory out of 5000000
- 45913 multiletter control sequences out of 15000+600000
- 26627 words of font info for 55 fonts, out of 8000000 for 9000
+ 43181 strings out of 493089
+ 898373 string characters out of 6134842
+ 1374596 words of memory out of 5000000
+ 45902 multiletter control sequences out of 15000+600000
+ 32625 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,16n,99p,10449b,1598s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on main.pdf (17 pages, 1487584 bytes).
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+public/cm-super/sftt1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
+w/helvetic/uhvb8a.pfb>
+Output written on main.pdf (20 pages, 1575368 bytes).
 PDF statistics:
- 1144 PDF objects out of 1200 (max. 8388607)
- 580 compressed objects within 6 object streams
- 108 named destinations out of 1000 (max. 500000)
- 344 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1225 PDF objects out of 1440 (max. 8388607)
+ 648 compressed objects within 7 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 349 words of extra memory for PDF output out of 10000 (max. 10000000)
 
