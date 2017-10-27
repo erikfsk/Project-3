@@ -14,6 +14,7 @@ using namespace arma;
 
 int main (int argc, char *argv[])
 {   
+    
     //setting all the masses
     //need it for mass ratio later
     double mass_sun = 2*pow(10,30);

@@ -29,27 +29,24 @@
 \abx@aux@cite{uniphys}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Theory}{2}{section.2}}
+\newlabel{sec:theory}{{2}{2}{Theory}{section.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Gravitation}{2}{subsection.2.1}}
 \newlabel{eq:newton}{{1}{3}{Gravitation}{equation.2.1}{}}
 \newlabel{eq:newton_all}{{2}{3}{Gravitation}{equation.2.2}{}}
 \newlabel{eq:acceleration_all}{{3}{3}{Gravitation}{equation.2.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Units}{3}{subsection.2.2}}
 \newlabel{sec:units}{{2.2}{3}{Units}{subsection.2.2}{}}
-\newlabel{eq:acceleration_all_au}{{4}{4}{Units}{equation.2.4}{}}
+\newlabel{eq:acceleration_all_au}{{4}{3}{Units}{equation.2.4}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Escape velocity}{4}{subsubsection.2.2.1}}
 \newlabel{sec:escape-velocity}{{2.2.1}{4}{Escape velocity}{subsubsection.2.2.1}{}}
-\newlabel{eq:escape-velocity}{{6}{4}{Escape velocity}{equation.2.6}{}}
+\newlabel{eq:escape-velocity}{{5}{4}{Escape velocity}{equation.2.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}The perihelion precession of mercury}{4}{subsection.2.3}}
 \newlabel{sec:perihelion}{{2.3}{4}{The perihelion precession of mercury}{subsection.2.3}{}}
-\@writefile{tdo}{\contentsline {todo}{since this is not implemented in the code yet nothing is writen}{4}{section*.3}}
-\pgfsyspdfmark {pgfid2}{4736286}{6956256}
-\pgfsyspdfmark {pgfid5}{37192280}{6973182}
-\pgfsyspdfmark {pgfid6}{39307210}{6702366}
 \abx@aux@cite{compphys}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Numerical methods}{5}{subsection.2.4}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Forward Euler}{5}{subsubsection.2.4.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Velocity-Verlet}{5}{subsubsection.2.4.2}}
-\newlabel{eq:verlet}{{10}{5}{Velocity-Verlet}{equation.2.10}{}}
+\newlabel{eq:verlet}{{9}{5}{Velocity-Verlet}{equation.2.9}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Method}{6}{section.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Implementation of code}{6}{subsection.3.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}FLOPs for the algorithms}{7}{subsection.3.2}}
@@ -57,46 +54,46 @@
 \@writefile{toc}{\contentsline {section}{\numberline {4}Result \& Discussion}{8}{section.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Earth-Sun system}{8}{subsection.4.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Stability}{8}{subsubsection.4.1.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces a) show the orbit of earth around the sound. The intial velocity is set to $2\pi $ in y direction and the start position to 1 au in x direction. b) shows how the error behaves. The intial values should give a perfect circular motion. So the error is calculated by $r_i - r_{0}$. It is clear that Verlet-Velocity method is superior. This simulation was with 1000 points with the end time of 1 year. Both simulations was produced by \href  {https://github.com/erikfsk/Project-3/blob/master/Project3/3a/plot_earth_sun.py}{\leavevmode {\color {blue}plot\_earth\_sun.py}}\relax }}{8}{figure.caption.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces a) show the orbit of earth around the sound. The intial velocity is set to $2\pi $ in y direction and the start position to 1 au in x direction. b) shows how the error develop. The intial values should give a perfect circular motion. So the error is calculated by $r_i - r_{0}$. It is clear that Verlet-Velocity method is a better approximation. This simulation was with 1000 points with the end time of 1 year. Both simulations was produced by \href  {https://github.com/erikfsk/Project-3/tree/master/Project3/earth-sun-standard-results}{\leavevmode {\color {blue}plot\_earth\_sun.py}}\relax }}{8}{figure.caption.3}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:earth-sun}{{1}{8}{a) show the orbit of earth around the sound. The intial velocity is set to $2\pi $ in y direction and the start position to 1 au in x direction. b) shows how the error behaves. The intial values should give a perfect circular motion. So the error is calculated by $r_i - r_{0}$. It is clear that Verlet-Velocity method is superior. This simulation was with 1000 points with the end time of 1 year. Both simulations was produced by \href {https://github.com/erikfsk/Project-3/blob/master/Project3/3a/plot_earth_sun.py}{\textcolor {blue}{plot\_earth\_sun.py}}\relax }{figure.caption.4}{}}
-\newlabel{table:euler-verlet-time}{{4.1.1}{8}{Stability}{figure.caption.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Time table for the different algorithms. The algorithms use nearly the same time. This is not a shocker since the number of FLOPs for the algorithms are similar, see section (\ref  {sec:flops}). Disclaimer: this is only the result from one test, but several was done. Both algorithms were very close and it seem to be random which is fastest.  \relax }}{8}{table.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Conserved quantities}{9}{subsubsection.4.1.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Both are figures are graphs of the kinetic energy and potential energy and how it differ from they intial value. a) is the Forward Euler method and b) is the Verlet-Velocity method. As expected the energies are not conserved in the Forward Euler method, but is conserved in the Verlet-Velocity.\relax }}{9}{figure.caption.5}}
-\newlabel{fig:conserved-energy}{{2}{9}{Both are figures are graphs of the kinetic energy and potential energy and how it differ from they intial value. a) is the Forward Euler method and b) is the Verlet-Velocity method. As expected the energies are not conserved in the Forward Euler method, but is conserved in the Verlet-Velocity.\relax }{figure.caption.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Both are figures are graphs of the momentum and how it differ from they intial value. a) is the Forward Euler method and b) is the Verlet-Velocity method. It should come as no suprise that momentum is not conserved for the Forward Euler method as the kinetic energy was not conserved, as the mass is a constant. Once again the Verlet-velocity method conserve the quantity. \relax }}{9}{figure.caption.6}}
-\newlabel{fig:conserved-momentum}{{3}{9}{Both are figures are graphs of the momentum and how it differ from they intial value. a) is the Forward Euler method and b) is the Verlet-Velocity method. It should come as no suprise that momentum is not conserved for the Forward Euler method as the kinetic energy was not conserved, as the mass is a constant. Once again the Verlet-velocity method conserve the quantity. \relax }{figure.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Both are figures are graphs of the angular momentum and how it differ from they intial value. a) is the Forward Euler method and b) is the Verlet-Velocity method. Forward Euler is once again not capable of conserving the value, but luckily for us the Verlet-Velocity method is. \relax }}{10}{figure.caption.7}}
-\newlabel{fig:conserved-ang}{{4}{10}{Both are figures are graphs of the angular momentum and how it differ from they intial value. a) is the Forward Euler method and b) is the Verlet-Velocity method. Forward Euler is once again not capable of conserving the value, but luckily for us the Verlet-Velocity method is. \relax }{figure.caption.7}{}}
+\newlabel{fig:earth-sun}{{1}{8}{a) show the orbit of earth around the sound. The intial velocity is set to $2\pi $ in y direction and the start position to 1 au in x direction. b) shows how the error develop. The intial values should give a perfect circular motion. So the error is calculated by $r_i - r_{0}$. It is clear that Verlet-Velocity method is a better approximation. This simulation was with 1000 points with the end time of 1 year. Both simulations was produced by \href {https://github.com/erikfsk/Project-3/tree/master/Project3/earth-sun-standard-results}{\textcolor {blue}{plot\_earth\_sun.py}}\relax }{figure.caption.3}{}}
+\newlabel{table:euler-verlet-time}{{4.1.1}{8}{Stability}{figure.caption.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Time table for the different algorithms. The algorithms use nearly the same time. This is not a shocker since the number of FLOPs for the algorithms are similar, see section (\ref  {sec:flops}). Note: this is only the result from one test, but several was done. Both algorithms were very close and it seem to be random which is fastest.  \relax }}{8}{table.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Conserved quantities}{8}{subsubsection.4.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Both graphs are of the kinetic energy and potential energy and how it differ from they intial value. a) is the Forward Euler method and b) is the Verlet-Velocity method.\relax }}{9}{figure.caption.4}}
+\newlabel{fig:conserved-energy}{{2}{9}{Both graphs are of the kinetic energy and potential energy and how it differ from they intial value. a) is the Forward Euler method and b) is the Verlet-Velocity method.\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Both graphs are of the momentum and how it differ from they intial value. a) is the Forward Euler method and b) is the Verlet-Velocity method. \relax }}{9}{figure.caption.5}}
+\newlabel{fig:conserved-momentum}{{3}{9}{Both graphs are of the momentum and how it differ from they intial value. a) is the Forward Euler method and b) is the Verlet-Velocity method. \relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Both are figures are graphs of the angular momentum and how it differ from they intial value. a) is the Forward Euler method and b) is the Verlet-Velocity method. \relax }}{10}{figure.caption.6}}
+\newlabel{fig:conserved-ang}{{4}{10}{Both are figures are graphs of the angular momentum and how it differ from they intial value. a) is the Forward Euler method and b) is the Verlet-Velocity method. \relax }{figure.caption.6}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Escape velocity}{10}{subsubsection.4.1.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces a) Show how the orbits of earths with different initial velocity are. b) Shows the same as a) but this time the dependency of r in the denominator in equation (\ref  {eq:newton}) is set to 3.5.\relax }}{11}{figure.caption.8}}
-\newlabel{fig:escape-velocity-low}{{5}{11}{a) Show how the orbits of earths with different initial velocity are. b) Shows the same as a) but this time the dependency of r in the denominator in equation (\ref {eq:newton}) is set to 3.5.\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces a) Shows the same as figure (\ref  {fig:escape-velocity-low}) but this time the dependency of r in the denominator in equation (\ref  {eq:newton}) is set to 3.75. b) Shows the same as a) but this time the dependency of r in the denominator in equation (\ref  {eq:newton}) is set to 4. \relax }}{11}{figure.caption.9}}
-\newlabel{fig:escape-velocity-high}{{6}{11}{a) Shows the same as figure (\ref {fig:escape-velocity-low}) but this time the dependency of r in the denominator in equation (\ref {eq:newton}) is set to 3.75. b) Shows the same as a) but this time the dependency of r in the denominator in equation (\ref {eq:newton}) is set to 4. \relax }{figure.caption.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Three body system}{12}{subsection.4.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Fixed mass for jupitur}{12}{subsubsection.4.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Plot of the three body system with Earth, Jupitur and the sun. The graph is discussed in the paragraph above. \relax }}{12}{figure.caption.10}}
-\newlabel{fig:three-body}{{7}{12}{Plot of the three body system with Earth, Jupitur and the sun. The graph is discussed in the paragraph above. \relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces a) Show how the orbits of earths with different initial velocity develop. b) Shows the same as a) but this time the dependency of r in the denominator in equation (\ref  {eq:newton}) is set to 3.5.\relax }}{10}{figure.caption.7}}
+\newlabel{fig:escape-velocity-low}{{5}{10}{a) Show how the orbits of earths with different initial velocity develop. b) Shows the same as a) but this time the dependency of r in the denominator in equation (\ref {eq:newton}) is set to 3.5.\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces a) Shows the same as figure (\ref  {fig:escape-velocity-low}) but this time the dependency of r in the denominator in equation (\ref  {eq:newton}) is set to 3.75. b) Shows the same as a) but this time the dependency of r in the denominator in equation (\ref  {eq:newton}) is set to 4. \relax }}{11}{figure.caption.8}}
+\newlabel{fig:escape-velocity-high}{{6}{11}{a) Shows the same as figure (\ref {fig:escape-velocity-low}) but this time the dependency of r in the denominator in equation (\ref {eq:newton}) is set to 3.75. b) Shows the same as a) but this time the dependency of r in the denominator in equation (\ref {eq:newton}) is set to 4. \relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Three body system}{11}{subsection.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Fixed mass for Jupitur}{11}{subsubsection.4.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Plot of the three body system with Earth, Jupitur and the sun. n = 100000 over 15 years. The graph is discussed in the paragraph above. \relax }}{12}{figure.caption.9}}
+\newlabel{fig:three-body}{{7}{12}{Plot of the three body system with Earth, Jupitur and the sun. n = 100000 over 15 years. The graph is discussed in the paragraph above. \relax }{figure.caption.9}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Varying mass for jupitur}{12}{subsubsection.4.2.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Both plot has the sun as a fixed point. What the graphs represent is discussed above and legend should be pretty self explanatory.\relax }}{13}{figure.caption.11}}
-\newlabel{fig:three-body-varying}{{8}{13}{Both plot has the sun as a fixed point. What the graphs represent is discussed above and legend should be pretty self explanatory.\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Both plot has the sun as a fixed point. n = 100000 over 15 years. What the graphs represent is discussed above and legend should be pretty self explanatory.\relax }}{13}{figure.caption.10}}
+\newlabel{fig:three-body-varying}{{8}{13}{Both plot has the sun as a fixed point. n = 100000 over 15 years. What the graphs represent is discussed above and legend should be pretty self explanatory.\relax }{figure.caption.10}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Solar system}{13}{subsection.4.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Three planets and all moving}{14}{subsubsection.4.3.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces a) Shows the three body system solved with a moving sun. It has a n=$10^5$ and ran for 15 years. If this would be used for any tests I would recommend using more points. To use more points here would be stupid. You can't see the difference. b) is a zoom of the middle part of a). This is for verifying that the sun moves around the center of mass and is not drifting.\relax }}{14}{figure.caption.12}}
-\newlabel{fig:three-body-moving}{{9}{14}{a) Shows the three body system solved with a moving sun. It has a n=$10^5$ and ran for 15 years. If this would be used for any tests I would recommend using more points. To use more points here would be stupid. You can't see the difference. b) is a zoom of the middle part of a). This is for verifying that the sun moves around the center of mass and is not drifting.\relax }{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Three planets and all moving}{13}{subsubsection.4.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces  n=$10^5$ and ran for 15 years. a) Shows the three body system solved with a moving sun. I b) is a zoom of the middle part of a). This is for verifying that the sun moves around the center of mass and is not drifting.\relax }}{13}{figure.caption.11}}
+\newlabel{fig:three-body-moving}{{9}{13}{n=$10^5$ and ran for 15 years. a) Shows the three body system solved with a moving sun. I b) is a zoom of the middle part of a). This is for verifying that the sun moves around the center of mass and is not drifting.\relax }{figure.caption.11}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Solar system all moving}{14}{subsubsection.4.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces a) Shows the hole solar system solved with a moving sun. It has a n=$10^6$ and ran for 300 years. If this would be used for any tests I would recommend using more points, but this would be stupid for this figure, since you can't see the difference. b) is a zoom of the middle part of a). This is so you can see that they also move in orbits.\relax }}{14}{figure.caption.13}}
-\newlabel{fig:solarsystem-moving}{{10}{14}{a) Shows the hole solar system solved with a moving sun. It has a n=$10^6$ and ran for 300 years. If this would be used for any tests I would recommend using more points, but this would be stupid for this figure, since you can't see the difference. b) is a zoom of the middle part of a). This is so you can see that they also move in orbits.\relax }{figure.caption.13}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}The perihelion precession of Mercury}{15}{subsection.4.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces The assignment stated that after 100 years mercury perihelion should move about 43''. From the graphs we can see that it should move about 45''. This is probably duo to numerical inaccuracy. The slope's inaccuracy is proably caused by the numerical solver precision. In other words more points would increase the accuracy. The jumping up and down along the linear curve is probably duo to the computer's accuracy with numbers. This will also improve by more steps, but one of them might stop to improve before the other.\relax }}{15}{figure.caption.14}}
-\newlabel{fig:perihelion}{{11}{15}{The assignment stated that after 100 years mercury perihelion should move about 43''. From the graphs we can see that it should move about 45''. This is probably duo to numerical inaccuracy. The slope's inaccuracy is proably caused by the numerical solver precision. In other words more points would increase the accuracy. The jumping up and down along the linear curve is probably duo to the computer's accuracy with numbers. This will also improve by more steps, but one of them might stop to improve before the other.\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces a) Shows the hole solar system solved with a moving sun. b) is a zoom of the middle part of a). \relax }}{14}{figure.caption.12}}
+\newlabel{fig:solarsystem-moving}{{10}{14}{a) Shows the hole solar system solved with a moving sun. b) is a zoom of the middle part of a). \relax }{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}The perihelion precession of Mercury}{14}{subsection.4.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces The graphs shows how Mercury orbit has moved in arc seconds as a function of orbits for Mercury.\relax }}{15}{figure.caption.13}}
+\newlabel{fig:perihelion}{{11}{15}{The graphs shows how Mercury orbit has moved in arc seconds as a function of orbits for Mercury.\relax }{figure.caption.13}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{15}{section.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}References}{17}{section.6}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Appendix}{18}{section.7}}
-\newlabel{sec:appendix}{{7}{18}{Appendix}{section.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Our retarded workflow... Next time maybe it will be better?\relax }}{19}{figure.caption.16}}
-\newlabel{fig:ab}{{12}{19}{Our retarded workflow... Next time maybe it will be better?\relax }{figure.caption.16}{}}
-\newlabel{LastPage}{{}{19}{}{page.19}{}}
-\xdef\lastpage@lastpage{19}
-\xdef\lastpage@lastpageHy{19}
+\@writefile{toc}{\contentsline {section}{\numberline {6}References}{16}{section.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Appendix}{17}{section.7}}
+\newlabel{sec:appendix}{{7}{17}{Appendix}{section.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Our retarded workflow... Next time maybe it will be better?\relax }}{18}{figure.caption.15}}
+\newlabel{fig:ab}{{12}{18}{Our retarded workflow... Next time maybe it will be better?\relax }{figure.caption.15}{}}
+\newlabel{LastPage}{{}{18}{}{page.18}{}}
+\xdef\lastpage@lastpage{18}
+\xdef\lastpage@lastpageHy{18}

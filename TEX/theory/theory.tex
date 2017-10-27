@@ -17,10 +17,10 @@ We will simulate the solar system with only the gravitational force affecting th
 	\label{eq:newton}
 \end{align}
 
-Thankfully for us the force is an attractive force. It is worth noting that if the sun is at origo distance is simply the norm position vector of the planet. From now on we will denoted the different masses with $M_{planet name}$ except for the sun that has the special symbol $M_{\odot}$. 
+The gravitation force is an attractive force. It is worth noting that if the sun is at origo, the distance is simply the norm of the position vector of the planet. The mass of the sun has the special symbol $M_{\odot}$. 
 \\
 \\
-If you have n object attracting each other the total gravitational force, $F_k$, for each object is: 
+For n objects the total gravitational force, $F_k$, for each object is: 
 
 
 \begin{align}
@@ -35,7 +35,7 @@ If you have n object attracting each other the total gravitational force, $F_k$,
 	\label{eq:newton_all}
 \end{align}
 
-Where $\delta_{k,i}$ is the function:
+Where $\delta_{k,i}$ is the delta-function:
 
 \begin{align*}
 	\delta_{k,i} = \left\{\begin{matrix}
@@ -46,7 +46,7 @@ Where $\delta_{k,i}$ is the function:
 
 
 
-We can use Newton's second law to determine the accelration of the planet. Newton's second law state $F = m\vec{a}$. Which translate to:
+We can use Newton's second law to determine the accelration of the planet ($m_ka_k= F_{tot}$):
 
 \begin{align}
 	a_k
@@ -73,11 +73,11 @@ We can use Newton's second law to determine the accelration of the planet. Newto
 
 
 \subsection{Units}\label{sec:units}
-As a famous person once said, \"If you use seconds and meters you will not finish within the deadline\". I think our professor, Morten Hjorth-Jensen, is on to something. Seconds and meters are impractical in this project. Therefore we use more suitable units. The distance between the earth and sun, 149 597 870 691 meter, is defined as one astronomical unit (au). For time one year seems reasonable. 
+As a famous person once said, "If you use seconds and meters you will not finish within the deadline".\footnote{Morten Hjorth-Jensen} Use of the units, seconds and meters, are impractical in this project. More suitable units are used. The mean distance between the earth and sun, 149 597 870 691 meter, is defined as one astronomical unit (au). For time, year is the unit.
 These are the units that will be used in this project. 
 \\
 \\
-We can now express the gravitational constant with these units. To do this we use the formula for the acceleration for a circular orbit is $\frac{v^2}{r}$. Combine this with the gravitational law, we get: 
+We can now express the gravitational constant with these units. To do this we use the formula for the acceleration of a circular orbit, $\frac{v^2}{r}$. Combine this with the equation (\ref{eq:newton}) and Newton's second law, we get: 
 
 \begin{align*}
 	\frac{v^2}{r} =
@@ -104,7 +104,7 @@ Applying this to equation (\ref{eq:acceleration_all}), we get:
 	\label{eq:acceleration_all_au}
 \end{align}
 
-Note that if you pick $M_\odot = 4 \pi$, then you get G = 1 and a planet's mass become $m_i = 4\pi \frac{m_{i_{kg}}} {M_{\odot_{kg}}}$
+Note that if you pick $M_\odot = 4 \pi$, then you get G = 1 and a planet's mass become $m_i = 4\pi \frac{m_{i_{kg}}} {M_{\odot_{kg}}}$.
 
 
 
@@ -114,11 +114,11 @@ Note that if you pick $M_\odot = 4 \pi$, then you get G = 1 and a planet's mass 
 
 \subsubsection{Escape velocity}\label{sec:escape-velocity}
 
-Later in the project we are asked to find the escape velocity by trial and error. This question is basicly, when does the earth have enough kinetic energy to escape the potential. The potential is a integral from 0 to $\infty$ $F_G$ over $dr$. For a given planet with only the sun in the solar system the integral is from r to $\infty$. This is shown in equation (\ref{eq:escape-velocity}).  
+Later in the project we are asked to find the escape velocity by trial and error. This question is basicly, when does the earth have enough kinetic energy to escape the potential. The potential is equal to $\int_0^\infty F_G dr$. For a given planet with only the sun in the solar system the integral is from r to $\infty$. This is shown in equation (\ref{eq:escape-velocity}).  
 
 
 \begin{align}
-E_k =\int_r^\infty \frac{GmM}{\vec{|r|}^2} d\vec{r}\\
+E_k =\int_r^\infty \frac{GmM}{\vec{|r|}^2} d\vec{r}
 \label{eq:escape-velocity}
 \end{align}
 
@@ -129,7 +129,7 @@ Let's solve it:
 	\\
 	&\frac{1}{2}mv^2 = GmM_\odot \int_r^\infty -\frac{1}{\vec{|r|}^2} d\vec{r}
 	\\
-	&\text{G = 1, see section \ref{sec:units} for explanation.}
+	&\intertext{G = 1, see section \ref{sec:units} for explanation.}
 	\\
 	&\frac{1}{2}v^2 = M_\odot \int_r^\infty -\frac{1}{\vec{|r|}^2} d\vec{r}
 	\\
@@ -137,7 +137,7 @@ Let's solve it:
 	\\
 	&v^2 = 2M_\odot \frac{1}{\vec{|r|}}
 	\\
-	&\text{r = 1, see section \ref{sec:units} for explanation.}
+	&\intertext{r = 1, see section \ref{sec:units} for explanation.}
 	\\
 	&v = \sqrt{8\pi^2}
 	\\
@@ -155,12 +155,15 @@ Let's solve it:
 
 \subsection{The perihelion precession of mercury}\label{sec:perihelion}
 
+The distance between a satellite in orbit and the center of this orbit (focal point) will fluctuate. The point at which the satellite is closest to its orbital center is called the perihelion, while the one furthest away is called the aphelion. For a simple, Newtonian, two body system the elliptical orbit does not move or change and so the perihelion (or aphelion) doesn't either. However, when more satellites are introduced they affect each other in such a way as to change the location of the perihelion over time. This is called a perihelion precession. In our experiment we consider only the two body system of sun/Mercury and use a modified gravitational law that takes relativistic effects into account. This way we know that any precession we get is caused solely by relativistic effects. Furthermore, a precession of $\theta = 43''$ would account precicesly for the deviation between the classical prediction and observed values and ultimately strengthen Einsteins theory of general relativity.\\
 
-\todo{since this is not implemented in the code yet nothing is writen}
+In our case the new and improved gravitational law can be stated through the following formula
 
+$$F_G = \frac{GM_{Sun}M_{Mercury}}{r^2}\qty[1 + \frac{3l^2}{r^2c^2}]$$
 
+Here we recognize the traditional components of the classical gravitational law while also noting the addition of a new term that contains a constant $c$, the speed of light, and a variable $l$, the magnitude of Mercury's orbital angular momentum per unit mass
 
-
+$$l = \abs{\vec{r}\times \vec{v}}$$
 
 
 
@@ -175,8 +178,8 @@ Let's solve it:
 
 \subsection{Numerical methods}
 
-Equation (\ref{eq:acceleration_all_au}) initial conditions for velocity and position determines the orbit of the planets. 
-These equations are for x,y,z direction and when writen out you get a coupled set of differential equations. This set is near impossible to solve analytically. It might be impossible. We will use numerical methods to solve this set. More specifically we will use the Forward Euler method and the Velocity-Verlet method. A given $t_i$ is equal to $t_0 + ih$, where $h = (t_{0} + t_{n})/n $.
+Equation (\ref{eq:acceleration_all_au}) initial conditions for velocity and position determine the orbit of the planets. 
+These equations are for x,y,z direction, writen out you get a coupled set of differential equations. This set is near impossible to solve analytically. It might be impossible. We will use numerical methods to solve this set. More specifically we will use the Forward Euler method and the Velocity-Verlet method. A given $t_i$ is equal to $t_0 + ih$, where $h = (t_{0} + t_{n})/n $.
 
 
 
@@ -224,7 +227,7 @@ The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \cite{c
 
 \subsubsection{Velocity-Verlet}
 
-You guessed it, this is the second order Taylor polynomial. . As I said the Velocity-Verlet method is based on a Taylor polynomial approximation. And this is the second order. 
+You guessed it, this is the second order Taylor polynomial. As I said the Velocity-Verlet method is based on a Taylor polynomial approximation. And this is the second order. 
 
 \begin{align}
 	&\vec{r_i}(t+h) \approx \vec{r_i}(t) + h \vec{v_i}(t) + \frac{1}{2} h^2 a(t)
@@ -239,7 +242,7 @@ Since we have no formula for the derivative of a, we use the approximation:
 	\vec{a}'(t) \approx \frac{\vec{a}(t+h) - \vec{a}(t)}{h}
 \end{align*}
 
-We simply update the position first. We keep the old acceleration and calculate the acceleration at the new position.  Using this equation (\ref{eq:verlet}) we get: 
+We simply update the position first. We keep the old acceleration and calculate the acceleration at the new position.  Using this and equation (\ref{eq:verlet}) we get: 
 
 \begin{align*}
 	&\vec{v_i}(t+h) \approx \vec{v_i}(t) + h \vec{a}(t) + \frac{1}{2} h(\vec{a}(t+h) - \vec{a}(t))

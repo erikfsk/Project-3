@@ -3,25 +3,25 @@
 The implementation is writen in c++ and is object oriented. We found it natural to divide the project in to two classes and one main program. 
 \\
 \\
-We made one class for the planet (\href{https://github.com/erikfsk/Project-3/blob/master/Project3/planet.cpp}{\textcolor{blue}{planet.cpp}} and \href{https://github.com/erikfsk/Project-3/blob/master/Project3/planet.h}{\textcolor{blue}{planet.h}}). This class has the variables for the position, velocity and mass for the specific planet. As well as a filename to write the output to. The class has methods for updating position, velocity and acceleration as well as methods for writing to a file. 
+We made one class for the planet (\href{https://github.com/erikfsk/Project-3/blob/master/Project3/planet.cpp}{\textcolor{blue}{planet.cpp}} and \href{https://github.com/erikfsk/Project-3/blob/master/Project3/planet.h}{\textcolor{blue}{planet.h}}). This class contain variables for the position, velocity, mass for the specific planet and a specific filename. The class has methods for updating position, velocity and acceleration as outlined in section \ref{sec:theory}. Also methods for writing to a file was implemented. 
 \\
 \\
 The second class is for the solarsystem (\href{https://github.com/erikfsk/Project-3/blob/master/Project3/solarsystem.cpp}{\textcolor{blue}{solarsystem.cpp}} and \href{https://github.com/erikfsk/Project-3/blob/master/Project3/solarsystem.h}{\textcolor{blue}{solsystem.h}}). The solar system contain a list with all the planets and has methods to make the planets move and react to each other. You can look at the solar system as a class with for-loops for the planets. 
 \\
 \\
-The \href{https://github.com/erikfsk/Project-3/blob/master/Project3/main.cpp}{\textcolor{blue}{main.cpp}} program is where all the inputs to the solar system is given. Here all the initial condition for the planets are stated and organized for proper input to the solarsystem class. 
+The \href{https://github.com/erikfsk/Project-3/blob/master/Project3/main.cpp}{\textcolor{blue}{main.cpp}} program is where all the inputs to the solar system is given. Here all the initial condition for the planets are stated and organized for proper input to the solarsystem class.
 \\
 \\
 All these programs are combined with \href{https://github.com/erikfsk/Project-3/blob/master/Project3/makefile}{\textcolor{blue}{makefile}}. When this is done the \href{https://github.com/erikfsk/Project-3/blob/master/Project3/solsys.exe}{\textcolor{blue}{solsys.exe}} will be made. Takes in three arguments. The first argument is the number of planets that you would like to simulate. This is a preset list of the bodies in the solarsystem. Where the Sun is the first element, Earth is the second and Jupiter is the third. After that they ascend based on radius. The second argument is the end time measured in years from now. The start time is set to 19th of october 2017. This is the time that the intial values were obtained from \href{https://ssd.jpl.nasa.gov/horizons.cgi#top}{\textcolor{blue}{NASA}}. Finally the third argument is the number of steps, n. 
 \\
 \\
 Finally, in our github repository there is directories were earlier versions can be found. For instance the 
-\href{https://github.com/erikfsk/Project-3/tree/master/Project3/}{\textcolor{blue}{Project3}} directory is for where all the code is centered. In this directory there are many directories with different results files and python scripts for making figures. There are also a coupled of other main.cpp variants. These are for different assisgments in this project. It should be pretty self explanatory. 
+\href{https://github.com/erikfsk/Project-3/tree/master/Project3/}{\textcolor{blue}{Project3}} directory is for where all the code is centered. In this directory there are many directories with different results files and python scripts for making figures. There are also a coupled of other main.cpp variants. These are for different assignments in this project. It should be pretty self ex<planet>ory. 
 
 
 \subsection{FLOPs for the algorithms}\label{sec:flops}
 
-Let's talk FLOPs. The counting of the FLOPs are in the section \ref{sec:appendix}, a.k.a. appendix. There we show the code and have comments that says how many flops each line are.
+The counting of the FLOPs are in the section \ref{sec:appendix}, a.k.a. appendix. There we show sudo-code. For each line of code there is a corresponding comment that counts flops. For each method there is a header comment explaining what method and algorithm it represent. After each method there is a final comment with total FLOPs.
 \\
 \\
 Common for both algorithms are calculation of the acceleration. The acceleration itself is 19 FLOPs. But for both algorithm this is called $n(n-1)$ times. After that the Forward Euler method calls functions to set position and velocity. This is done for all the planets. And for each planet it costs 6 FLOPs for the position and 6 more for the velocity. This gives a total of:
@@ -35,7 +35,7 @@ For the Verlet-Velocity it is 21 FLOPs for the position and 12 FLOPs for the vel
 \begin{align*}
 	19n(n-1) + 33n = 19n^2 + 14n
 \end{align*}
-
+%((19*(9^2) + 14*9)- (19*(9^2) - 7*9)) /(19*(9^2) -7*9)
 So, this means that for 9 planets the verlet method has about 10 \% more FLOPs, which is not much considering that much of the time are used on writing to file and getting variables and so on. The difference between the two algorithms should not be much.
 
 

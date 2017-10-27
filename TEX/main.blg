@@ -1,14 +1,14 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'main.blg'
-[50] biber-darwin:276> INFO - === Fri Oct 27, 2017, 11:44:50
-[50] Biber.pm:333> INFO - Reading 'main.bcf'
-[154] Biber.pm:645> INFO - Found 3 citekeys in bib section 0
-[171] Biber.pm:2977> INFO - Processing section 0
-[190] Biber.pm:3115> INFO - Looking for bibtex format file 'kilder.bib' for section 0
-[192] 6ce97eef.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[193] 6ce97eef.pm:895> INFO - Found BibTeX data source 'kilder.bib'
-[256] 76c5e630.pm:66> INFO - Overriding locale 'nb-NO' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[256] 76c5e630.pm:66> INFO - Overriding locale 'nb-NO' defaults 'variable = shifted' with 'variable = non-ignorable'
-[256] Biber.pm:2854> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'nb-NO'
-[261] b0a14286.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[262] b0a14286.pm:596> INFO - Output to main.bbl
+[54] biber-darwin:276> INFO - === Fri Oct 27, 2017, 15:43:04
+[55] Biber.pm:333> INFO - Reading 'main.bcf'
+[155] Biber.pm:645> INFO - Found 3 citekeys in bib section 0
+[173] Biber.pm:2977> INFO - Processing section 0
+[200] Biber.pm:3115> INFO - Looking for bibtex format file 'kilder.bib' for section 0
+[203] 6ce97eef.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[205] 6ce97eef.pm:895> INFO - Found BibTeX data source 'kilder.bib'
+[265] 76c5e630.pm:66> INFO - Overriding locale 'nb-NO' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[265] 76c5e630.pm:66> INFO - Overriding locale 'nb-NO' defaults 'variable = shifted' with 'variable = non-ignorable'
+[265] Biber.pm:2854> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'nb-NO'
+[270] b0a14286.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[270] b0a14286.pm:596> INFO - Output to main.bbl
