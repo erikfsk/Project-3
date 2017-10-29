@@ -10,7 +10,7 @@
 
 \subsection{Gravitation}
 
-We will simulate the solar system with only the gravitational force affecting the planets.  Newton's gravitational law is stated in equation (\ref{eq:newton})\cite{uniphys}. Where G is the gravitational constant ($6.67 \cdot 10^{-11} \rm{Nm^2/s^2}$), r is the distance between the planets, m is the mass of the object and M is the mass of the other object.
+We will simulate the solar system with only the gravitational force affecting the planets.  Newton's gravitational law is stated in equation (\ref{eq:newton})\cite{uniphys}. It determines the gravitational force between two objects, where G is the gravitational constant ($6.67 \cdot 10^{-11} \rm{Nm^2/s^2}$), r is the distance between the planets, m is the mass of the object and M is the mass of the other object.
 
 \begin{align}
 	\vec{F_G}  =\frac{GmM}{\vec{|r|}^3}\vec{r}
@@ -46,7 +46,7 @@ Where $\delta_{k,i}$ is the delta-function:
 
 
 
-We can use Newton's second law to determine the accelration of the planet ($m_ka_k= F_{tot}$):
+We can use Newton's second law to determine the acceleration of the planet ($m_ka_k= F_{tot}$):
 
 \begin{align}
 	a_k
@@ -73,7 +73,7 @@ We can use Newton's second law to determine the accelration of the planet ($m_ka
 
 
 \subsection{Units}\label{sec:units}
-As a famous person once said, "If you use seconds and meters you will not finish within the deadline".\footnote{Morten Hjorth-Jensen} Use of the units, seconds and meters, are impractical in this project. More suitable units are used. The mean distance between the earth and sun, 149 597 870 691 meter, is defined as one astronomical unit (au). For time, year is the unit.
+As a famous person once said, "If you use seconds and meters you will not finish within the deadline".\footnote{Morten Hjorth-Jensen} Use of the units seconds and meters are impractical in this project. More suitable units are used. The mean distance between the earth and sun, 149 597 870 691 meter, is defined as one astronomical unit (au). For time, year is the unit.
 These are the units that will be used in this project. 
 \\
 \\
@@ -90,6 +90,8 @@ We can now express the gravitational constant with these units. To do this we us
 	\frac{4\pi^2}
 	{M_{\odot}} \rm{au^3/year^2}
 \end{align*}
+
+\pagebreak
 
 Applying this to equation (\ref{eq:acceleration_all}), we get: 
 
@@ -114,7 +116,7 @@ Note that if you pick $M_\odot = 4 \pi$, then you get G = 1 and a planet's mass 
 
 \subsubsection{Escape velocity}\label{sec:escape-velocity}
 
-Later in the project we are asked to find the escape velocity by trial and error. This question is basicly, when does the earth have enough kinetic energy to escape the potential. The potential is equal to $\int_0^\infty F_G dr$. For a given planet with only the sun in the solar system the integral is from r to $\infty$. This is shown in equation (\ref{eq:escape-velocity}).  
+Later in the project we are asked to find the escape velocity by trial and error. This question is basicly, when does the earth have enough kinetic energy to escape the gravitational potential from the sun. The potential is equal to $\int_0^\infty F_G dr$. For a given planet with only the sun in the solar system the integral is from r to $\infty$. This is shown in equation (\ref{eq:escape-velocity}).  
 
 
 \begin{align}
@@ -161,15 +163,20 @@ In our case the new and improved gravitational law can be stated through the fol
 
 $$F_G = \frac{GM_{Sun}M_{Mercury}}{r^2}\qty[1 + \frac{3l^2}{r^2c^2}]$$
 
-Here we recognize the traditional components of the classical gravitational law while also noting the addition of a new term that contains a constant $c$, the speed of light, and a variable $l$, the magnitude of Mercury's orbital angular momentum per unit mass
+Here we recognize the traditional components of the classical gravitational law while also noting the addition of a new term that contains a constant, $c$ (the speed of light), and a variable, $l$ the magnitude of Mercury's orbital angular momentum per unit mass
 
-$$l = \abs{\vec{r}\times \vec{v}}$$
+$$
+l = \abs{\vec{r}\times \vec{v}}
+$$
 
+It is trivial to show the following relation between angle and coordinates using simple trigonometry
+$$\tan \theta = \frac{y_p}{x_p}$$
 
-
-
-
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.4\linewidth]{theory/bilder/figure.pdf}
+	\caption{The figure shows the angle ($\theta$) and coordinates $(x_p,y_p)$ for the perihelion of Mercury. And with the formula $\tan \theta = \frac{opposite}{adjacent}$}
+\end{figure}
 
 
 
@@ -178,8 +185,7 @@ $$l = \abs{\vec{r}\times \vec{v}}$$
 
 \subsection{Numerical methods}
 
-Equation (\ref{eq:acceleration_all_au}) initial conditions for velocity and position determine the orbit of the planets. 
-These equations are for x,y,z direction, writen out you get a coupled set of differential equations. This set is near impossible to solve analytically. It might be impossible. We will use numerical methods to solve this set. More specifically we will use the Forward Euler method and the Velocity-Verlet method. A given $t_i$ is equal to $t_0 + ih$, where $h = (t_{0} + t_{n})/n $.
+Equation (\ref{eq:acceleration_all_au}),initial conditions and the standard relations between position, velocity, acceleration determine the orbit of the planets. These equations are for x,y and z direction, written out you get a coupled set of differential equations. This set is near impossible to solve analytically. It might be impossible. We will use numerical methods to solve this set. More specifically we will use the Forward Euler method and the Velocity-Verlet method. A given $t_i$ is equal to $t_0 + ih$, where $h = (t_{0} + t_{n})/n $.
 
 
 
@@ -195,7 +201,7 @@ These equations are for x,y,z direction, writen out you get a coupled set of dif
 
 \subsubsection{Forward Euler}
 
-Both method use a Taylor polynomial approximation to solve the set of differential equation. The Forward Euler use the first order Taylor polynomial. With $r'(t) = v(t)$ and $v'(t) = a(t)$ the Forward Euler method result in: 
+Both methods use a Taylor polynomial approximation to solve the set of differential equation. The Forward Euler uses the first order Taylor polynomial. With $r'(t) = v(t)$ and $v'(t) = a(t)$ the Forward Euler method results in: 
  
 \begin{align}
 	&\vec{r_i}(t+h) \approx \vec{r_i}(t) + h \vec{v_i}(t)
@@ -211,7 +217,7 @@ Discretized version. i is the object number and j is the time step:
 	&\vec{v_{i,j+1}} \approx \vec{v_{i,j}} + h \vec{a}_{i,j}
 \end{align*}
 
-The error for a first order taylor polynomial goes as $\mathcal{O}(h^2)$ \cite{compphys}. This is the error for each step. The error is accumulated for each step and will thereby be proportional to h. 
+The error for a first order taylor polynomial goes as $\mathcal{O}(h^3)$ \cite{compphys}. This is the error for each step. The error is accumulated for each step and will therefore be proportional to h. 
 
 
 
